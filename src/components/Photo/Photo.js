@@ -1,12 +1,17 @@
 import React from 'react';
 import './Photo.css';
 
-const Photo = () => {
+const Photo = props => {
+  const { photoData } = props;
+  const imageUrl = photoData.links.html;
+  const imageSource = photoData.urls.small;
+
   return (
     <div className="Photo">
-      <h1>Soi una Photo</h1>
+      <img src={imageSource} />
+      <a>{imageUrl}</a>
     </div>
-  )
-}
+  );
+};
 
 export default Photo;
