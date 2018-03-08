@@ -14,16 +14,22 @@ class Routes extends Component {
   }
 
   render() {
-    return(
+    return (
       <div>
-        <h1>I am Routes</h1>
+        <Route to="/list" component={List} />
+        <Route to="/grid" component={Grid} />
+        <Route to="/styleguide" component={StyleGuide} />
       </div>
-    )
+    );
   }
 }
 
 const mapDispatchToProps = dispatch => ({
   populatePhotos: () => dispatch(actions.populatePhotos())
-})
+});
 
-export default connect(null, mapDispatchToProps)(Routes)
+export default connect(null, mapDispatchToProps)(Routes);
+
+Routes.propTypes = {
+  populatePhotos: PropTypes.func
+};
