@@ -5,8 +5,8 @@ import './List.css';
 
 const List = (props) => {
   const { photos } = props;
-  const renderedPhotos = photos.map((photo, index) => {
-    return <Photo photoData={photo} />
+  const renderedPhotos = photos.map(photo => {
+    return <Photo key={photo.id} photoData={photo} />
   });
 
   return (
