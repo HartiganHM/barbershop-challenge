@@ -10,7 +10,7 @@ import * as actions from '../../actions';
 
 class Routes extends Component {
   componentDidMount() {
-    console.log('hi')
+    this.props.populatePhotos();
   }
 
   render() {
@@ -22,4 +22,8 @@ class Routes extends Component {
   }
 }
 
-export default Routes
+const mapDispatchToProps = dispatch => ({
+  populatePhotos: () => dispatch(actions.populatePhotos())
+})
+
+export default connect(null, mapDispatchToProps)(Routes)
