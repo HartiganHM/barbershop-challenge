@@ -6,9 +6,13 @@ import List from '../List/List';
 import Grid from '../Grid/Grid';
 import Details from '../Details/Details';
 import StyleGuide from '../StyleGuide/StyleGuide';
-import * as action from '../../actions';
+import * as actions from '../../actions';
 
 class Routes extends Component {
+  componentDidMount() {
+    console.log('hi')
+  }
+
   render() {
     return(
       <div>
