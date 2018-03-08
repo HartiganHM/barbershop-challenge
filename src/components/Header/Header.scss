@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .view-icon {
+    fill: red;
+  }
   .view-button {
     color: red;
   }
