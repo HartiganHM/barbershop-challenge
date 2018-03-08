@@ -1,4 +1,4 @@
-const photosReducers = (store = [], action) => {
+const photos = (store = [], action) => {
   switch (action.type) {
   case 'PHOTOS_TO_STORE':
     return action.photos;
@@ -8,4 +8,4 @@ const photosReducers = (store = [], action) => {
   }
 };
 
-export default photosReducers;
+export default photos;
