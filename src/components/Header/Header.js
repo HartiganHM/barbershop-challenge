@@ -3,24 +3,23 @@ import iconData from '../../data/iconData';
 import './Header.css';
 
 const Header = () => {
+  const buttons = ['Grid', 'List']
+  const renderButtons = buttons.map((button, index) => {
+    return (
+      <a key={index} className="view-button">
+          <svg className="view-icon" width="13" height="10" viewBox="0 0 13 10">
+            <path d={iconData[button]} />
+          </svg>
+          {button}
+        </a>
+    )
+  })
   return (
     <div className="Header">
       <h1>My Photos</h1>
 
       <span className="button-wrapper">
-        <a className="view-button">
-          <svg className="header-icon" width="13" height="10" viewBox="0 0 13 10">
-            <path d={iconData.gridIcon} />
-          </svg>
-          Grid
-        </a>
-
-        <a className="view-button">
-          <svg className="header-icon" width="13" height="10" viewBox="0 0 13 10">
-            <path d={iconData.listIcon} />
-          </svg>
-          List
-        </a>
+        {renderButtons}
       </span>
     </div>
   );
