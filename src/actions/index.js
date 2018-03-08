@@ -2,7 +2,7 @@ import getPhotos from '../helpers/getPhotos/getPhotos';
 
 export const populatePhotos = () => async dispatch => {
   const photos = await getPhotos();
-  dispatch(sendPhotosToStore());
+  dispatch(sendPhotosToStore(photos));
 };
 
 export const sendPhotosToStore = photos => ({
