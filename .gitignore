@@ -22,3 +22,5 @@ yarn-error.log*
 
 # css files
 css
+
+unsplashCredentials.js

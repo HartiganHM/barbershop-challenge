@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import rootReducer from './reducers';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import App from './App/App';
+import App from './components/App/App';
 import './normalize.css';
 import './index.css';
 

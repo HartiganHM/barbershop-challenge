@@ -1,0 +1,16 @@
+import getPhotos from '../helpers/getPhotos/getPhotos';
+
+export const populatePhotos = () => async dispatch => {
+  const photos = await getPhotos();
+  dispatch(sendPhotosToStore(photos));
+};
+
+export const sendPhotosToStore = photos => ({
+  type: 'PHOTOS_TO_STORE',
+  photos
+});
+
+export const changePhotosView = selectedView => ({
+  type: 'CHANGE_VIEW',
+  selectedView
+});
