@@ -8,4 +8,4 @@ const photosReducers = (store = [], action) => {
   }
 };
 
-export default clinic;
+export default photosReducers;
