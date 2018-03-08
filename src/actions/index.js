@@ -9,3 +9,8 @@ export const sendPhotosToStore = photos => ({
   type: 'PHOTOS_TO_STORE',
   photos
 });
+
+export const changePhotosView = selectedView => ({
+  type: 'CHANGE_VIEW',
+  selectedView
+});
