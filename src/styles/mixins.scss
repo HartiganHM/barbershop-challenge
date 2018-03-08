@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+// Boxsizing to REMs
+@mixin height($height) {
+  height: convertRem($height);
+}
+
+@mixin width($width) {
+  width: convertRem($width);
+}
+
+@mixin maxHeight($maxHeight) {
+  max-height: convertRem($maxHeight);
+}
+
+@mixin minHeight($minHeight) {
+  min-height: convertRem($minHeight);
+}
+
+@mixin maxWidth($maxWidth) {
+  max-width: convertRem($maxWidth);
+}
+
+@mixin minWidth($minWidth) {
+  min-width: convertRem($minWidth);
+}
+
+@mixin margin($margin) {
+  margin: convertRem($margin);
+}
+
+@mixin padding($padding) {
+  padding: convertRem($padding);
+}
+
+@mixin top($top) {
+  top: convertRem($top);
+}
+
+@mixin right($right) {
+  right: convertRem($right);
+}
+
+@mixin bottom($bottom) {
+  bottom: convertRem($bottom);
+}
+
+@mixin left($left) {
+  left: convertRem($left);
+}
+
+@function convertRem($size) {
+  $remSize: $size * 0.625;
+  @return #{$remSize}rem;
+}
