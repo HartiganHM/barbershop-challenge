@@ -3,9 +3,8 @@ import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import Details from '../Details/Details';
-import Grid from '../Grid/Grid';
 import Header from '../Header/Header';
-import List from '../List/List';
+import PhotoContainer from '../PhotoContainer/PhotoContainer';
 import StyleGuide from '../StyleGuide/StyleGuide';
 import * as actions from '../../actions';
 
@@ -17,12 +16,9 @@ class Routes extends Component {
   render() {
     return (
       <div>
-        <Route to="/" component={Header} />
-        <Switch>
-          <Route to="/list" component={List} />
-          <Route to="/grid" component={Grid} />
-          <Route to="/styleguide" component={StyleGuide} />
-        </Switch>
+        <Route to="/" render={Header} />
+        <Route to="/" component={PhotoContainer} />
+        <Route exact to="/styleguide" component={StyleGuide} />
       </div>
     );
   }

@@ -1,16 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Photo from '../Photo/Photo';
-import './List.css';
+import './PhotoContainer.css';
 
-const List = (props) => {
+const PhotoContainer = (props) => {
   const { photos } = props;
   const renderedPhotos = photos.map(photo => {
     return <Photo key={photo.id} photoData={photo} />
   });
 
   return (
-    <div className="List">
+    <div className="PhotoContainer">
       {renderedPhotos}
     </div>
   );
@@ -20,4 +20,4 @@ const mapStateToProps = store => ({
   photos: store.photos
 });
 
-export default connect(mapStateToProps, null)(List);
+export default connect(mapStateToProps, null)(PhotoContainer);
