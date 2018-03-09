@@ -35,7 +35,7 @@ const Header = props => {
 
   return (
     <div className="Header">
-      <h1>My Photos</h1>
+      <h1 className="header-title">My Photos</h1>
 
       <span className="button-wrapper">{renderButtons}</span>
     </div>
