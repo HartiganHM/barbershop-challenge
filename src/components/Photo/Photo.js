@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Photo.css';
 
 const Photo = props => {
@@ -15,3 +16,7 @@ const Photo = props => {
 };
 
 export default Photo;
+
+Photo.propTypes = {
+  photoData: PropTypes.object
+};

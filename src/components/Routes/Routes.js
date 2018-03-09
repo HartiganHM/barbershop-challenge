@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import Details from '../Details/Details';
+// import Details from '../Details/Details';
 import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
 import StyleGuide from '../StyleGuide/StyleGuide';

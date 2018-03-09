@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Photo from '../Photo/Photo';
+import PropTypes from 'prop-types';
 import './PhotoContainer.css';
 
 const PhotoContainer = props => {
@@ -17,3 +18,7 @@ const mapStateToProps = store => ({
 });
 
 export default connect(mapStateToProps, null)(PhotoContainer);
+
+PhotoContainer.propTypes = {
+  photos: PropTypes.array
+};
