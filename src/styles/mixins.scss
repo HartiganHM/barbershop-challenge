@@ -1,5 +1,4 @@
 @import './variables.scss';
-
 // Boxsizing to REMs
 @mixin height($height) {
   height: convertRem($height);
@@ -52,4 +51,40 @@
 @function convertRem($size) {
   $remSize: $size * 0.625;
   @return #{$remSize}rem;
+}
+
+// Button Styles
+@mixin buttonDefault() {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @include margin(1);
+  @include padding(1.5);
+  border-radius: 2px;
+  background-color: #fff;
+  color: $blue-midtone;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@mixin buttonDefaultAlternate() {
+  @include buttonDefault();
+  background-color: $blue-midtone;
+  color: #fff;
+  cursor: default;
+}
+
+@mixin buttonHover() {
+  background-color: $blue-highlight;
+  color: #fff;
+}
+
+@mixin buttonActive() {
+  background-color: $blue-lowlight;
+  color: #fff;
+}
+
+@mixin buttonDisabled() {
+  background-color: $lightblue;
+  color: #fff;
 }

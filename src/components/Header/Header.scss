@@ -12,48 +12,34 @@
   .button-wrapper {
     display: flex;
     .view-button {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
+      @include buttonDefault;
       @include width(7.5);
-      @include margin(1);
-      @include padding(1.5);
-      border-radius: 2px;
-      background-color: #FFF;
-      color: $blue-midtone;
-      font-size: 1.2rem;
-      cursor: pointer;
       &:hover {
-        background-color: $blue-highlight;
-        color: #FFF;
+        @include buttonHover;
         .view-icon {
-          fill: #FFF;
+          fill: #fff;
         }
       }
       &:active {
-        background-color: $blue-lowlight;
-        color: #FFF;
+        @include buttonActive;
         .view-icon {
-          fill: #FFF;
+          fill: #fff;
         }
       }
       &:disabled {
-        background-color: $lightblue;
-        color: #FFF;
+        @include buttonDisabled;
         .view-icon {
-          fill: #FFF;
+          fill: #fff;
         }
       }
       &.selected {
-        background-color: $blue-midtone;
-        color: #FFF;
-        cursor: default;
+        @include buttonDefaultAlternate;
       }
     }
     .view-icon {
       fill: $blue-midtone-transparent;
       &.selected {
-        fill: #FFF;
+        fill: #fff;
       }
     }
   }

@@ -14,34 +14,44 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      width: 4.6875rem;
       margin: 0.625rem;
       padding: 0.9375rem;
       border-radius: 2px;
-      background-color: #FFF;
+      background-color: #fff;
       color: #2F80ED;
       font-size: 1.2rem;
-      cursor: pointer; }
+      cursor: pointer;
+      width: 4.6875rem; }
       .Header .button-wrapper .view-button:hover {
         background-color: #33ADFF;
-        color: #FFF; }
+        color: #fff; }
         .Header .button-wrapper .view-button:hover .view-icon {
-          fill: #FFF; }
+          fill: #fff; }
       .Header .button-wrapper .view-button:active {
         background-color: #3F67D4;
-        color: #FFF; }
+        color: #fff; }
         .Header .button-wrapper .view-button:active .view-icon {
-          fill: #FFF; }
+          fill: #fff; }
       .Header .button-wrapper .view-button:disabled {
         background-color: #8EB7ED;
-        color: #FFF; }
+        color: #fff; }
         .Header .button-wrapper .view-button:disabled .view-icon {
-          fill: #FFF; }
+          fill: #fff; }
       .Header .button-wrapper .view-button.selected {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0.625rem;
+        padding: 0.9375rem;
+        border-radius: 2px;
+        background-color: #fff;
+        color: #2F80ED;
+        font-size: 1.2rem;
+        cursor: pointer;
         background-color: #2F80ED;
-        color: #FFF;
+        color: #fff;
         cursor: default; }
     .Header .button-wrapper .view-icon {
       fill: rgba(47, 128, 237, 0.7); }
       .Header .button-wrapper .view-icon.selected {
-        fill: #FFF; }
+        fill: #fff; }
