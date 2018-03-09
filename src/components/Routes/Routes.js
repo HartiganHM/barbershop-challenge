@@ -10,7 +10,7 @@ import * as actions from '../../actions';
 
 class Routes extends Component {
   componentDidMount() {
-    // this.props.populatePhotos();
+    this.props.populatePhotos();
   }
 
   render() {
