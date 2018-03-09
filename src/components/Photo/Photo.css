@@ -14,7 +14,7 @@
     line-height: 137.5%;
     word-break: break-all; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1414px) {
   .Photo .photo-details-link {
     margin: 0 20px;
     font-size: 24px; } }

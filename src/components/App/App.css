@@ -3,11 +3,11 @@
   width: 140rem;
   margin: 2rem auto; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1414px) {
   .App {
     width: 600px;
     margin: 20px auto; } }
 
-@media screen and (max-width: 614px) {
+@media screen and (max-width: 615px) {
   .App {
     width: 375px; } }
