@@ -35,5 +35,6 @@ export default connect(null, mapDispatchToProps)(Photo);
 
 Photo.propTypes = {
   photoData: PropTypes.object,
-  currentView: PropTypes.string
+  currentView: PropTypes.string,
+  sendSelectedPhotoToStore: PropTypes.func
 };
