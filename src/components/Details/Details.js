@@ -7,18 +7,19 @@ import './Details.css';
 
 const Details = props => {
   const { selectedPhoto } = props;
-  const imageSource = selectedPhoto.urls.small;
+  const imageSource = selectedPhoto.urls.regular;
   const imageAlt = selectedPhoto.description;
   const userFullName = selectedPhoto.user.name;
   const userImage = selectedPhoto.user.profile_image.large;
-  const userUsername = selectedPhoto.user.username;
+  const userUsername = '@' + selectedPhoto.user.username;
   const userLocation = selectedPhoto.user.location;
 
   return (
     <div className="Details">
-      <img src={imageSource} alt={imageAlt} />
-      <h3>{userFullName}</h3>
-      <img src={userImage} alt={userUsername} />
+      <img className="selected-image" src={imageSource} alt={imageAlt} />
+      <h3 className="fullname" >{userFullName}</h3>
+      <img className="user-image" src={userImage} alt={userUsername} />
+      <h4 className="username">{userUsername}</h4>
       {userLocation && (
         <span className="location-wrapper">
           <h4 className="location">{userLocation}</h4>
