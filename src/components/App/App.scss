@@ -4,3 +4,16 @@
   @include width(140);
   @include marginYX(2, auto);
 }
+
+@media screen and (max-width: 875px) {
+  .App {
+    width: 600px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .App {
+    width: 375px;
+  }
+}
