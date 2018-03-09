@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 37.5rem;
+  min-height: 72rem;
+  margin: 15.2rem auto 0; }
+  .Details .selected-image {
+    width: 33.5rem; }
+  .Details .user-image {
+    width: 5.6rem;
+    border-radius: 5.6rem; }
