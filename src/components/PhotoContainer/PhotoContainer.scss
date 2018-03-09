@@ -19,3 +19,11 @@
     }
   }
 }
+  
+@media screen and (max-width: 620px) {
+  .PhotoContainer {
+    &.Grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
