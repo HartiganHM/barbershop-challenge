@@ -10,13 +10,13 @@ import * as actions from '../../actions';
 
 class Routes extends Component {
   componentDidMount() {
-    this.props.populatePhotos();
+    // this.props.populatePhotos();
   }
 
   render() {
     return (
       <div>
-        <Route to="/" render={Header} />
+        <Route to="/" component={Header} />
         <Route to="/" component={PhotoContainer} />
         <Route exact to="/styleguide" component={StyleGuide} />
       </div>

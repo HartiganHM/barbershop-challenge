@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .Header .header-title {
+    margin: 0;
+    padding: 0rem 1.25rem;
+    font-size: 2.4rem; }
+  .Header .button-wrapper {
+    display: flex;
+    padding: 0rem 0.625rem; }
+    .Header .button-wrapper .view-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0rem 0.625rem;
+      padding: 0.9375rem;
+      border-radius: 2px;
+      background-color: #fff;
+      color: #2F80ED;
+      font-size: 1.2rem;
+      cursor: pointer;
+      width: 4.6875rem; }
+      .Header .button-wrapper .view-button:hover {
+        background-color: #33ADFF;
+        color: #fff; }
+        .Header .button-wrapper .view-button:hover .view-icon {
+          fill: #fff; }
+      .Header .button-wrapper .view-button:active {
+        background-color: #3F67D4;
+        color: #fff; }
+        .Header .button-wrapper .view-button:active .view-icon {
+          fill: #fff; }
+      .Header .button-wrapper .view-button:disabled {
+        background-color: #8EB7ED;
+        color: #fff; }
+        .Header .button-wrapper .view-button:disabled .view-icon {
+          fill: #fff; }
+      .Header .button-wrapper .view-button.selected {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0rem 0.625rem;
+        padding: 0.9375rem;
+        border-radius: 2px;
+        background-color: #fff;
+        color: #2F80ED;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background-color: #2F80ED;
+        color: #fff;
+        cursor: default; }
+    .Header .button-wrapper .view-icon {
+      fill: rgba(47, 128, 237, 0.7); }
+      .Header .button-wrapper .view-icon.selected {
+        fill: #fff; }

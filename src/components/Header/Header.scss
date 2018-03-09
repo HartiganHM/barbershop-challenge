@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-title {
+    margin: 0;
+    @include paddingYX(0, 2);
+    font-size: 2.4rem;
+  }
+  .button-wrapper {
+    display: flex;
+    @include paddingYX(0, 1);
+    .view-button {
+      @include buttonDefault;
+      @include width(7.5);
+      &:hover {
+        @include buttonHover;
+        .view-icon {
+          fill: #fff;
+        }
+      }
+      &:active {
+        @include buttonActive;
+        .view-icon {
+          fill: #fff;
+        }
+      }
+      &:disabled {
+        @include buttonDisabled;
+        .view-icon {
+          fill: #fff;
+        }
+      }
+      &.selected {
+        @include buttonDefaultAlternate;
+      }
+    }
+    .view-icon {
+      fill: $blue-midtone-transparent;
+      &.selected {
+        fill: #fff;
+      }
+    }
+  }
+}
