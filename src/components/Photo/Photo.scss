@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.Photo {
+  display: flex;
+  align-items: center;
+  @include marginYX(4, 0);
+  .photo-image {
+    @include width(24);
+  }
+  .photo-details-link {
+    @include marginYX(0, 4);
+    color: $blue-midtone;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 140%;
+    word-break: break-all;
+  }
+}

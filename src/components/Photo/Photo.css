@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.Photo {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0rem; }
+  .Photo .photo-image {
+    width: 15rem; }
+  .Photo .photo-details-link {
+    margin: 0rem 2.5rem;
+    color: #2F80ED;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 140%;
+    word-break: break-all; }
