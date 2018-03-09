@@ -29,7 +29,7 @@
 }
 
 @mixin marginYX($Ymargin, $Xmargin) {
-  margin: convertRem($Ymargin), convertRem($Xmargin);
+  margin: convertRem($Ymargin) convertRem($Xmargin);
 }
 
 @mixin padding($padding) {
@@ -53,10 +53,9 @@
 }
 
 @function convertRem($size) {
-  @if ($size == 'auto') {
-    @return $size;
+  @if $size==auto {
+    @return auto;
   }
-
   $remSize: $size * 0.625;
   @return #{$remSize}rem;
 }
