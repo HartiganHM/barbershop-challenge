@@ -3,8 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .Header .view-icon {
-    fill: #FFF; }
   .Header .view-button {
-    background-color: #2F80ED;
-    color: #FFF; }
+    background-color: #FFF;
+    color: #2F80ED;
+    fill: #2F80ED;
+    cursor: pointer; }
+    .Header .view-button.active {
+      background-color: #2F80ED;
+      color: #FFF;
+      fill: #FFF; }

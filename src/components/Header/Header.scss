@@ -1,14 +1,17 @@
 @import '../../styles/variables.scss';
-
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .view-icon {
-    fill: #FFF;
-  }
   .view-button {
-    background-color: $blue-midtone;
-    color: #FFF;
+    background-color: #FFF;
+    color: $blue-midtone;
+    fill: $blue-midtone;
+    cursor: pointer;
+    &.active {
+      background-color: $blue-midtone;
+      color: #FFF;
+      fill: #FFF;
+    }
   }
 }
