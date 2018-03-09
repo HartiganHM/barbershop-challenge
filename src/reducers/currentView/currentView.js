@@ -1,4 +1,4 @@
-const currentView = (store = 'List', action) => {
+const currentView = (store = 'Grid', action) => {
   switch (action.type) {
   case 'CHANGE_VIEW':
     return action.selectedView;

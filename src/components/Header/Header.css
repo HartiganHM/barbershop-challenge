@@ -3,19 +3,20 @@
 .Header {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin: 0 2rem; }
   .Header .header-title {
     margin: 0;
     font-size: 3.2rem; }
   .Header .button-wrapper {
-    display: flex;
-    padding: 0 1rem; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; }
     .Header .button-wrapper .view-button {
       display: flex;
       align-items: center;
       justify-content: space-around;
       height: 4rem;
-      margin: 0 1rem;
       padding: 0.5rem;
       border-radius: 2px;
       background-color: #fff;
@@ -43,7 +44,6 @@
         align-items: center;
         justify-content: space-around;
         height: 4rem;
-        margin: 0 1rem;
         padding: 0.5rem;
         border-radius: 2px;
         background-color: #fff;
@@ -58,6 +58,6 @@
       .Header .button-wrapper .view-icon.selected {
         fill: #fff; }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 620px) {
   .Header .header-title {
     font-size: 24px; } }

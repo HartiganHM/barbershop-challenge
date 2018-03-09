@@ -4,9 +4,9 @@
 .Photo {
   display: flex;
   align-items: center;
-  margin: 2rem 0;
-  .photo-image {
+  .list-image {
     width: 24rem;
+    margin: 2rem 0;
   }
   .photo-details-link {
     margin: 0 4rem;
@@ -18,8 +18,11 @@
   }
 }
 
-@media screen and (max-width: 1414px) {
+@media screen and (max-width: 1260px) {
   .Photo {
+    .grid-image {
+      width: 27rem;
+    }
     .photo-details-link {
       margin: 0 20px;
       font-size: 24px;
@@ -27,10 +30,13 @@
   }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 620px) {
   .Photo {
-    .photo-image {
+    .list-image {
       width: 80px;
+    }
+    .grid-image {
+      width: 33.5rem;
     }
     .photo-details-link {
       font-size: 16px;

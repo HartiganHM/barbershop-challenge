@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .Photo {
   display: flex;
-  align-items: center;
-  margin: 2rem 0; }
-  .Photo .photo-image {
-    width: 24rem; }
+  align-items: center; }
+  .Photo .list-image {
+    width: 24rem;
+    margin: 2rem 0; }
   .Photo .photo-details-link {
     margin: 0 4rem;
     color: #2F80ED;
@@ -14,13 +14,17 @@
     line-height: 137.5%;
     word-break: break-all; }
 
-@media screen and (max-width: 1414px) {
+@media screen and (max-width: 1260px) {
+  .Photo .grid-image {
+    width: 27rem; }
   .Photo .photo-details-link {
     margin: 0 20px;
     font-size: 24px; } }
 
-@media screen and (max-width: 615px) {
-  .Photo .photo-image {
+@media screen and (max-width: 620px) {
+  .Photo .list-image {
     width: 80px; }
+  .Photo .grid-image {
+    width: 33.5rem; }
   .Photo .photo-details-link {
     font-size: 16px; } }
