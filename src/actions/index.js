@@ -6,7 +6,7 @@ export const populatePhotos = () => async dispatch => {
   let photos = getSavedPhotos();
 
   if (!photos) {
-    photos = getPhotos();
+    photos = await getPhotos();
   }
 
   saveInitialPhotos(photos);
