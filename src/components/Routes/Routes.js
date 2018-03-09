@@ -16,7 +16,7 @@ class Routes extends Component {
   render() {
     return (
       <div>
-        <Route to="/" render={Header} />
+        <Route to="/" component={Header} />
         <Route to="/" component={PhotoContainer} />
         <Route exact to="/styleguide" component={StyleGuide} />
       </div>
