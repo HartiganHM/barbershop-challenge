@@ -5,17 +5,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 37.5rem;
   min-height: 72rem;
   margin: 15.2rem auto 0;
-  .selected-image {
-    width: 33.5rem;
+  .user-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .selected-image {
+      width: 33.5rem;
+      margin-bottom: 2.67rem;
+    }
+    .user-image {
+      width: 5.6rem;
+      border-radius: 5.6rem;
+    }
+    .fullname {
+      margin: 1.7rem 0 0.5rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+    .username {
+      margin: 0;
+      font-size: 1.4rem;
+    }
   }
-  .fullname {
-
-  }
-  .user-image {
-    width: 5.6rem;
-    border-radius: 5.6rem;
+  .location-wrapper {
+    display: flex;
+    align-items: center;
+    .location-icon {
+      margin-right: 0.9rem;
+      fill: $lightgrey;
+    }
   }
 }
