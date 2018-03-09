@@ -1,7 +1,15 @@
 import getPhotos from '../helpers/getPhotos/getPhotos';
+import saveInitialPhotos from '../helpers/saveInitialPhotos/saveInitialPhotos';
+import getSavedPhotos from '../helpers/getSavedPhotos/getSavedPhotos';
 
 export const populatePhotos = () => async dispatch => {
-  const photos = await getPhotos();
+  let photos = getSavedPhotos();
+
+  if (!photos) {
+    photos = await getPhotos();
+  }
+
+  saveInitialPhotos(photos);
   dispatch(sendPhotosToStore(photos));
 };
 

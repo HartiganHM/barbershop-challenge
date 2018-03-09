@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .App {
-  width: 87.5rem;
-  margin: 1.25rem auto; }
+  width: 140rem;
+  margin: 2rem auto; }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 1414px) {
   .App {
     width: 600px;
     margin: 20px auto; } }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 615px) {
   .App {
     width: 375px; } }

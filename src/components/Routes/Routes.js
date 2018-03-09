@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import Details from '../Details/Details';
+// import Details from '../Details/Details';
 import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
 import StyleGuide from '../StyleGuide/StyleGuide';
@@ -10,15 +10,15 @@ import * as actions from '../../actions';
 
 class Routes extends Component {
   componentDidMount() {
-    // this.props.populatePhotos();
+    this.props.populatePhotos();
   }
 
   render() {
     return (
       <div>
-        <Route to="/" component={Header} />
-        <Route to="/" component={PhotoContainer} />
-        <Route exact to="/styleguide" component={StyleGuide} />
+        <Route path="/" component={Header} />
+        <Route path="/" component={PhotoContainer} />
+        <Route exact path="/styleguide" component={StyleGuide} />
       </div>
     );
   }

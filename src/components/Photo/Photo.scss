@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.Photo {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  .photo-image {
+    width: 24rem;
+  }
+  .photo-details-link {
+    margin: 0 4rem;
+    color: $blue-midtone;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 137.5%;
+    word-break: break-all;
+  }
+}
+
+@media screen and (max-width: 1414px) {
+  .Photo {
+    .photo-details-link {
+      margin: 0 20px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .Photo {
+    .photo-image {
+      width: 80px;
+    }
+    .photo-details-link {
+      font-size: 16px;
+    }
+  }
+}

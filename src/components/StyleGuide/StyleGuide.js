@@ -6,7 +6,7 @@ const StyleGuide = () => {
     <div className="StyleGuide">
       <h1>Soi una StyleGuide</h1>
     </div>
-  )
-}
+  );
+};
 
 export default StyleGuide;

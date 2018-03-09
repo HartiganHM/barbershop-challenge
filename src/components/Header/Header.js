@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import iconData from '../../data/iconData';
 import * as actions from '../../actions';
+import PropTypes from 'prop-types';
 import './Header.css';
 
 const Header = props => {
@@ -12,7 +13,8 @@ const Header = props => {
   const renderButtons = buttons.map((button, index) => {
     const currentClass =
       currentView === button ? 'view-button selected' : 'view-button';
-    const iconClass = currentView === button ? 'view-icon selected' : 'view-icon';
+    const iconClass =
+      currentView === button ? 'view-icon selected' : 'view-icon';
 
     return (
       <a
@@ -20,12 +22,7 @@ const Header = props => {
         className={currentClass}
         onClick={() => changePhotosView(button)}
       >
-        <svg
-          className={iconClass}
-          width="13"
-          height="10"
-          viewBox="0 0 13 10"
-        >
+        <svg className={iconClass} width="13" height="10" viewBox="0 0 13 10">
           <path d={iconData[button]} />
         </svg>
         {button}
@@ -52,3 +49,8 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
+Header.propTypes = {
+  currentView: PropTypes.string,
+  changePhotosView: PropTypes.func
+};
