@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import './Details.css';
 
 const Details = () => {
@@ -10,4 +11,12 @@ const Details = () => {
   );
 };
 
-export default Details;
+const mapStateToProps = store => ({
+  selectedPhoto: store.selectedPhoto;
+});
+
+export default connect(mapStateToProps, null)(Details);
+
+Details.propTypes = {
+  selectedPhoto: PropTypes.object
+};
