@@ -6,7 +6,7 @@
   align-items: center; }
   .Header .header-title {
     margin: 0;
-    font-size: 2.4rem; }
+    font-size: 3.2rem; }
   .Header .button-wrapper {
     display: flex;
     padding: 0rem 0.625rem; }
@@ -14,14 +14,15 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      height: 2.5rem;
       margin: 0rem 0.625rem;
       padding: 0.9375rem;
       border-radius: 2px;
       background-color: #fff;
       color: #2F80ED;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       cursor: pointer;
-      width: 4.6875rem; }
+      width: 5rem; }
       .Header .button-wrapper .view-button:hover {
         background-color: #33ADFF;
         color: #fff; }
@@ -41,12 +42,13 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        height: 2.5rem;
         margin: 0rem 0.625rem;
         padding: 0.9375rem;
         border-radius: 2px;
         background-color: #fff;
         color: #2F80ED;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         cursor: pointer;
         background-color: #2F80ED;
         color: #fff;
@@ -55,3 +57,7 @@
       fill: rgba(47, 128, 237, 0.7); }
       .Header .button-wrapper .view-icon.selected {
         fill: #fff; }
+
+@media screen and (max-width: 614px) {
+  .Header .header-title {
+    font-size: 24px; } }
