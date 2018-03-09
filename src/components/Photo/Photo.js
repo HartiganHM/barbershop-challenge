@@ -28,7 +28,7 @@ const Photo = props => {
 
 const mapDispatchToProps = dispatch => ({
   sendSelectedPhotoToStore: selectedPhoto =>
-    dispatch(actions.sendSelectedPhotoToStore)
+    dispatch(actions.sendSelectedPhotoToStore(selectedPhoto))
 });
 
 export default connect(null, mapDispatchToProps)(Photo);
