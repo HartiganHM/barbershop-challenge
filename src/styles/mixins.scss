@@ -36,6 +36,10 @@
   padding: convertRem($padding);
 }
 
+@mixin paddingYX($Ypadding, $Xpadding) {
+  padding: convertRem($Ypadding) convertRem($Xpadding);
+}
+
 @mixin top($top) {
   top: convertRem($top);
 }
@@ -65,7 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @include margin(1);
+  @include marginYX(0, 1);
   @include padding(1.5);
   border-radius: 2px;
   background-color: #fff;
