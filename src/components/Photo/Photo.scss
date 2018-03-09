@@ -4,9 +4,12 @@
 .Photo {
   display: flex;
   align-items: center;
-  margin: 2rem 0;
-  .photo-image {
+  .list-image {
     width: 24rem;
+    margin: 2rem 0;
+  }
+  .grid-image {
+    // margin: 1rem;
   }
   .photo-details-link {
     margin: 0 4rem;
@@ -18,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 1414px) {
+@media screen and (max-width: 1260px) {
   .Photo {
     .photo-details-link {
       margin: 0 20px;
@@ -29,7 +32,7 @@
 
 @media screen and (max-width: 615px) {
   .Photo {
-    .photo-image {
+    .list-image {
       width: 80px;
     }
     .photo-details-link {

@@ -6,10 +6,11 @@ const Photo = props => {
   const { photoData, currentView } = props;
   const imageUrl = photoData.links.html;
   const imageSource = photoData.urls.small;
+  const currentClass = currentView === 'List' ? 'list-image' : 'grid-image';
 
   return (
     <div className="Photo">
-      <img className="photo-image" src={imageSource} />
+      <img className={currentClass} src={imageSource} />
       {currentView === 'List' && (
         <a className="photo-details-link">{imageUrl}</a>
       )}
