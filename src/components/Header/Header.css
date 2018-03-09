@@ -18,14 +18,30 @@
       margin: 0.625rem;
       padding: 0.9375rem;
       border-radius: 2px;
-      background-color: #fff;
+      background-color: #FFF;
       color: #2F80ED;
       font-size: 1.2rem;
       cursor: pointer; }
-      .Header .button-wrapper .view-button.active {
+      .Header .button-wrapper .view-button:hover {
+        background-color: #33ADFF;
+        color: #FFF; }
+        .Header .button-wrapper .view-button:hover .view-icon {
+          fill: #FFF; }
+      .Header .button-wrapper .view-button:active {
+        background-color: #3F67D4;
+        color: #FFF; }
+        .Header .button-wrapper .view-button:active .view-icon {
+          fill: #FFF; }
+      .Header .button-wrapper .view-button:disabled {
+        background-color: #8EB7ED;
+        color: #FFF; }
+        .Header .button-wrapper .view-button:disabled .view-icon {
+          fill: #FFF; }
+      .Header .button-wrapper .view-button.selected {
         background-color: #2F80ED;
-        color: #fff; }
+        color: #FFF;
+        cursor: default; }
     .Header .button-wrapper .view-icon {
       fill: rgba(47, 128, 237, 0.7); }
-      .Header .button-wrapper .view-icon.active {
-        fill: #fff; }
+      .Header .button-wrapper .view-icon.selected {
+        fill: #FFF; }

@@ -11,8 +11,8 @@ const Header = props => {
 
   const renderButtons = buttons.map((button, index) => {
     const currentClass =
-      currentView === button ? 'view-button active' : 'view-button';
-    const iconClass = currentView === button ? 'view-icon active' : 'view-icon';
+      currentView === button ? 'view-button selected' : 'view-button';
+    const iconClass = currentView === button ? 'view-icon selected' : 'view-icon';
 
     return (
       <a
