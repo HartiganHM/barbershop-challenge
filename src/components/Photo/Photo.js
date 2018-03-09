@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Photo.css';
 
 const Photo = props => {
-  const { photoData } = props;
+  const { photoData, currentView } = props;
   const imageUrl = photoData.links.html;
   const imageSource = photoData.urls.small;
 
@@ -18,5 +18,6 @@ const Photo = props => {
 export default Photo;
 
 Photo.propTypes = {
-  photoData: PropTypes.object
+  photoData: PropTypes.object,
+  currentView: PropTypes.string
 };

@@ -9,7 +9,7 @@ const PhotoContainer = props => {
   const currentClass = 'PhotoContainer ' + currentView;
 
   const renderedPhotos = photos.map(photo => {
-    return <Photo key={photo.id} photoData={photo} />;
+    return <Photo key={photo.id} photoData={photo} currentView={currentView}/>;
   });
 
   return <div className={currentClass}>{renderedPhotos}</div>;
