@@ -10,10 +10,10 @@
   }
   .button-wrapper {
     display: flex;
-    @include paddingYX(0, 1);
+    padding: 0 1rem;
     .view-button {
       @include buttonDefault;
-      @include width(8);
+      width: 8rem;
       &:hover {
         @include buttonHover;
         .view-icon {

@@ -9,14 +9,14 @@
     font-size: 3.2rem; }
   .Header .button-wrapper {
     display: flex;
-    padding: 0rem 1rem; }
+    padding: 0 1rem; }
     .Header .button-wrapper .view-button {
       display: flex;
       align-items: center;
       justify-content: space-around;
       height: 4rem;
-      margin: 0rem 1rem;
-      padding: 1.5rem;
+      margin: 0 1rem;
+      padding: 0.5rem;
       border-radius: 2px;
       background-color: #fff;
       color: #2F80ED;
@@ -43,8 +43,8 @@
         align-items: center;
         justify-content: space-around;
         height: 4rem;
-        margin: 0rem 1rem;
-        padding: 1.5rem;
+        margin: 0 1rem;
+        padding: 0.5rem;
         border-radius: 2px;
         background-color: #fff;
         color: #2F80ED;
