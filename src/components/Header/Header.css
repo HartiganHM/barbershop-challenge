@@ -58,6 +58,6 @@
       .Header .button-wrapper .view-icon.selected {
         fill: #fff; }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 620px) {
   .Header .header-title {
     font-size: 24px; } }
