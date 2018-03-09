@@ -69,12 +69,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @include height(4);
   @include marginYX(0, 1);
   @include padding(1.5);
   border-radius: 2px;
   background-color: #fff;
   color: $blue-midtone;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
