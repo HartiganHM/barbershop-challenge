@@ -4,13 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 2rem;
   .header-title {
     margin: 0;
     font-size: 3.2rem;
   }
   .button-wrapper {
-    display: flex;
-    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     .view-button {
       @include buttonDefault;
       width: 8rem;
