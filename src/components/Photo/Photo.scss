@@ -11,9 +11,28 @@
   .photo-details-link {
     @include marginYX(0, 4);
     color: $blue-midtone;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     font-weight: 600;
-    line-height: 140%;
+    line-height: 137.5%;
     word-break: break-all;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .Photo {
+    .photo-details-link {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .Photo {
+    .photo-image {
+      width: 80px;
+    }
+    .photo-details-link {
+      font-size: 16px;
+    }
   }
 }

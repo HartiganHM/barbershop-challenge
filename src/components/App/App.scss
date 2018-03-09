@@ -5,14 +5,14 @@
   @include marginYX(2, auto);
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 890px) {
   .App {
     width: 600px;
     margin: 20px auto;
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 614px) {
   .App {
     width: 375px;
   }
