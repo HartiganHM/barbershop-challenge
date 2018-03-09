@@ -11,14 +11,12 @@ const Photo = props => {
   const currentClass = currentView === 'List' ? 'list-image' : 'grid-image';
 
   return (
-    <div className="Photo">
-      <Link to={`/details/${photoData.id}`}>
-        <img className={currentClass} src={imageSource} alt={imageAlt} />
-        {currentView === 'List' && (
-          <a className="photo-details-link">{imageUrl}</a>
-        )}
-      </Link>
-    </div>
+    <Link to={`/details/${photoData.id}`} className="Photo">
+      <img className={currentClass} src={imageSource} alt={imageAlt} />
+      {currentView === 'List' && (
+        <h4 className="photo-details-link">{imageUrl}</h4>
+      )}
+    </Link>
   );
 };
 

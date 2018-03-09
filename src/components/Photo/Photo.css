@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .Photo {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none; }
   .Photo .list-image {
     width: 24rem;
     margin: 2rem 0; }
