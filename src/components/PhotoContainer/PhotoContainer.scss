@@ -1,6 +1,12 @@
 .PhotoContainer {
+  padding: 2rem 0;
   &.List {
     display: flex;
     flex-direction: column;
+  }
+  &.Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
   }
 }

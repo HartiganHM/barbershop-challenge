@@ -1,3 +1,9 @@
-.PhotoContainer.List {
-  display: flex;
-  flex-direction: column; }
+.PhotoContainer {
+  padding: 2rem 0; }
+  .PhotoContainer.List {
+    display: flex;
+    flex-direction: column; }
+  .PhotoContainer.Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; }
