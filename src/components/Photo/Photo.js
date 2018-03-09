@@ -9,8 +9,8 @@ const Photo = props => {
 
   return (
     <div className="Photo">
-      <img src={imageSource} />
-      <a>{imageUrl}</a>
+      <img className="photo-image" src={imageSource} />
+      <a className="photo-details-link">{imageUrl}</a>
     </div>
   );
 };
