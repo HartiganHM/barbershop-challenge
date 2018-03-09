@@ -4,12 +4,12 @@
 .Photo {
   display: flex;
   align-items: center;
-  @include marginYX(4, 0);
+  margin: 4rem 0;
   .photo-image {
-    @include width(24);
+    width: 24rem;
   }
   .photo-details-link {
-    @include marginYX(0, 4);
+    margin: 0 4rem;
     color: $blue-midtone;
     font-size: 3.2rem;
     font-weight: 600;
@@ -21,6 +21,7 @@
 @media screen and (max-width: 890px) {
   .Photo {
     .photo-details-link {
+      margin: 0 20px;
       font-size: 24px;
     }
   }
