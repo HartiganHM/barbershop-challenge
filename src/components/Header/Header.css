@@ -1,14 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .Header .view-button {
-    background-color: #FFF;
-    color: #2F80ED;
-    fill: #2F80ED;
-    cursor: pointer; }
-    .Header .view-button.active {
-      background-color: #2F80ED;
-      color: #FFF;
-      fill: #FFF; }
+  .Header .button-wrapper {
+    display: flex; }
+    .Header .button-wrapper .view-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 4.6875rem;
+      margin: 0.625rem;
+      padding: 0.9375rem;
+      border-radius: 2px;
+      background-color: #fff;
+      color: #2F80ED;
+      font-size: 1.2rem;
+      cursor: pointer; }
+      .Header .button-wrapper .view-button.active {
+        background-color: #2F80ED;
+        color: #fff; }
+    .Header .button-wrapper .view-icon {
+      fill: rgba(47, 128, 237, 0.7); }
+      .Header .button-wrapper .view-icon.active {
+        fill: #fff; }
