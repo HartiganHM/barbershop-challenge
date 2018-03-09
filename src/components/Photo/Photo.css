@@ -3,7 +3,7 @@
 .Photo {
   display: flex;
   align-items: center;
-  margin: 4rem 0; }
+  margin: 2rem 0; }
   .Photo .photo-image {
     width: 24rem; }
   .Photo .photo-details-link {
