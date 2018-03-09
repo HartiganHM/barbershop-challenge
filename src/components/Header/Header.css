@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .Header .view-icon {
-    fill: red; }
+    fill: #FFF; }
   .Header .view-button {
-    color: red; }
+    background-color: #2F80ED;
+    color: #FFF; }

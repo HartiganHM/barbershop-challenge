@@ -1,16 +1,17 @@
 import React from 'react';
-import { connect } from 'redux';
+import { connect } from 'react-redux';
 import iconData from '../../data/iconData';
 import * as actions from '../../actions';
 import './Header.css';
 
-const Header = () => {
-  const { currentView } = props.currentView;
+const Header = props => {
+  const { currentView } = props;
+
   const buttons = ['Grid', 'List'];
 
   const renderButtons = buttons.map((button, index) => {
-    const currentClass =
-      currentView === button ? 'view-button active' : 'view-button';
+    const currentClass = currentView === button ? 'view-button active' : 'view-button';
+
     return (
       <a key={index} className={currentClass}>
         <svg className="view-icon" width="13" height="10" viewBox="0 0 13 10">
@@ -20,6 +21,7 @@ const Header = () => {
       </a>
     );
   });
+
   return (
     <div className="Header">
       <h1>My Photos</h1>
@@ -34,7 +36,7 @@ const mapStateToProps = store => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  changePhotosView: () => dispatch(actions.changePhotosView())
+  changePhotosView: selectedView => dispatch(actions.changePhotosView(selectedView))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

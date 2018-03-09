@@ -1,11 +1,14 @@
+@import '../../styles/variables.scss';
+
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   .view-icon {
-    fill: red;
+    fill: #FFF;
   }
   .view-button {
-    color: red;
+    background-color: $blue-midtone;
+    color: #FFF;
   }
 }
