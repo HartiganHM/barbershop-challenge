@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
+import iconData from '../../data/iconData';
 import PropTypes from 'prop-types';
 import './Details.css';
 
@@ -16,12 +17,18 @@ const Details = props => {
 
   return (
     <div className="Details">
-      <img className="selected-image" src={imageSource} alt={imageAlt} />
-      <img className="user-image" src={userImage} alt={userUsername} />
-      <h3 className="fullname" >{userFullName}</h3>
-      <h4 className="username">{userUsername}</h4>
+    <div className="user-wrapper">
+    <img className="selected-image" src={imageSource} alt={imageAlt} />
+        <img className="user-image" src={userImage} alt={userUsername} />
+        <h2 className="fullname">{userFullName}</h2>
+        <h3 className="username">{userUsername}</h3>
+      </div>
       {userLocation && (
         <span className="location-wrapper">
+          <svg className="location-icon" width="15" height="20" viewBox="0 0 15 20">
+            <path d={iconData.location}/>
+          </svg>
+
           <h4 className="location">{userLocation}</h4>
         </span>
       )}
@@ -43,3 +50,4 @@ Details.propTypes = {
 //user image
 //username
 //location
+
