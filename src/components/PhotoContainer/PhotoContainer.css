@@ -1,4 +1,5 @@
 .PhotoContainer {
+  margin: 0 2rem;
   padding: 2rem 0; }
   .PhotoContainer.List {
     display: flex;
@@ -7,3 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px; }
+
+@media screen and (max-width: 1260px) {
+  .PhotoContainer.Grid {
+    grid-template-columns: repeat(2, 1fr); } }
