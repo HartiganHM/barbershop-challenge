@@ -1,8 +1,8 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 .App {
-  @include width(140);
-  @include marginYX(2, auto);
+  width: 140rem;
+  margin: 2rem auto;
 }
 
 @media screen and (max-width: 890px) {

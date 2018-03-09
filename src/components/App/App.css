@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .App {
-  width: 87.5rem;
-  margin: 1.25rem auto; }
+  width: 140rem;
+  margin: 2rem auto; }
 
 @media screen and (max-width: 890px) {
   .App {
