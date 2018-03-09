@@ -17,8 +17,8 @@ const Details = props => {
   return (
     <div className="Details">
       <img className="selected-image" src={imageSource} alt={imageAlt} />
-      <h3 className="fullname" >{userFullName}</h3>
       <img className="user-image" src={userImage} alt={userUsername} />
+      <h3 className="fullname" >{userFullName}</h3>
       <h4 className="username">{userUsername}</h4>
       {userLocation && (
         <span className="location-wrapper">
