@@ -12,6 +12,7 @@ const Header = props => {
   const renderButtons = buttons.map((button, index) => {
     const currentClass =
       currentView === button ? 'view-button active' : 'view-button';
+    const iconClass = currentView === button ? 'view-icon active' : 'view-icon';
 
     return (
       <a
@@ -19,7 +20,12 @@ const Header = props => {
         className={currentClass}
         onClick={() => changePhotosView(button)}
       >
-        <svg className={currentClass} width="13" height="10" viewBox="0 0 13 10">
+        <svg
+          className={iconClass}
+          width="13"
+          height="10"
+          viewBox="0 0 13 10"
+        >
           <path d={iconData[button]} />
         </svg>
         {button}
