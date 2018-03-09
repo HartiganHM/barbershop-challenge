@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Photo.css';
 
@@ -11,10 +12,12 @@ const Photo = props => {
 
   return (
     <div className="Photo">
-      <img className={currentClass} src={imageSource} alt={imageAlt} />
-      {currentView === 'List' && (
-        <a className="photo-details-link">{imageUrl}</a>
-      )}
+      <Link to={`/details/${photoData.id}`}>
+        <img className={currentClass} src={imageSource} alt={imageAlt} />
+        {currentView === 'List' && (
+          <a className="photo-details-link">{imageUrl}</a>
+        )}
+      </Link>
     </div>
   );
 };
