@@ -10,7 +10,9 @@ const Photo = props => {
   return (
     <div className="Photo">
       <img className="photo-image" src={imageSource} />
-      <a className="photo-details-link">{imageUrl}</a>
+      {currentView === 'List' && (
+        <a className="photo-details-link">{imageUrl}</a>
+      )}
     </div>
   );
 };
