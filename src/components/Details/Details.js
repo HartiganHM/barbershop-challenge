@@ -9,6 +9,8 @@ import './Details.css';
 const Details = props => {
   console.log(props);
   const { selectedPhoto } = props;
+  const { push } = props.history;
+
   const imageSource = selectedPhoto.urls.regular;
   const imageAlt = selectedPhoto.description;
   const userFullName = selectedPhoto.user.name;
@@ -18,7 +20,11 @@ const Details = props => {
 
   return (
     <div className="Details">
-      <svg className="close-icon" viewBox="0 0 17.99 17.99">
+      <svg
+        className="close-icon"
+        onClick={() => push('/')}
+        viewBox="0 0 17.99 17.99"
+      >
         <rect
           x="8.5"
           y="-3.22"
