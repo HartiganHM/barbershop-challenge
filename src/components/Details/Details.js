@@ -73,10 +73,6 @@ const mapStateToProps = store => ({
 export default connect(mapStateToProps, null)(Details);
 
 Details.propTypes = {
-  selectedPhoto: PropTypes.object
+  selectedPhoto: PropTypes.object,
+  history: PropTypes.object
 };
-
-//photo
-//user image
-//username
-//location
