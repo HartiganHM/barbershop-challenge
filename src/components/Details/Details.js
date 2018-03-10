@@ -19,6 +19,7 @@ const Details = props => {
   const userFullName = selectedPhoto.user.name;
   const userImage = selectedPhoto.user.profile_image.large;
   const userUsername = '@' + selectedPhoto.user.username;
+  const userProfile = selectedPhoto.user.links.html;
   const userLocation = selectedPhoto.user.location;
 
   return (
@@ -44,17 +45,19 @@ const Details = props => {
         />
       </svg>
 
-      <div className="user-wrapper">
+      <div className="wrapper">
         <picture>
           <source srcSet={regularImage} media="(max-width: 1260px)" />
           <img className="selected-image" src={fullImage} alt={imageAlt} />
         </picture>
 
-        <img className="user-image" src={userImage} alt={userUsername} />
+        <a className="user-wrapper" target="_blank" href={userProfile}>
+          <img className="user-image" src={userImage} alt={userUsername} />
 
-        <h2 className="fullname">{userFullName}</h2>
+          <h2 className="fullname">{userFullName}</h2>
 
-        <h3 className="username">{userUsername}</h3>
+          <h3 className="username">{userUsername}</h3>
+        </a>
       </div>
 
       <span className="location-wrapper">
