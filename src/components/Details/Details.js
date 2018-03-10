@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import './Details.css';
 
 const Details = props => {
+  console.log(props);
   const { selectedPhoto } = props;
   const imageSource = selectedPhoto.urls.regular;
   const imageAlt = selectedPhoto.description;
@@ -17,21 +18,43 @@ const Details = props => {
 
   return (
     <div className="Details">
-    <div className="user-wrapper">
-    <img className="selected-image" src={imageSource} alt={imageAlt} />
+      <svg className="close-icon" viewBox="0 0 17.99 17.99">
+        <rect
+          x="8.5"
+          y="-3.22"
+          width="1"
+          height="24.44"
+          transform="translate(-3.73 8.99) rotate(-45)"
+        />
+        <rect
+          x="8.5"
+          y="-3.21"
+          width="1"
+          height="24.43"
+          transform="translate(8.99 -3.73) rotate(45)"
+        />
+      </svg>
+
+      <div className="user-wrapper">
+        <img className="selected-image" src={imageSource} alt={imageAlt} />
         <img className="user-image" src={userImage} alt={userUsername} />
         <h2 className="fullname">{userFullName}</h2>
         <h3 className="username">{userUsername}</h3>
       </div>
-      {userLocation && (
-        <span className="location-wrapper">
-          <svg className="location-icon" width="15" height="20" viewBox="0 0 15 20">
-            <path d={iconData.location}/>
-          </svg>
+      <span className="location-wrapper">
+        <svg
+          className="location-icon"
+          width="15"
+          height="20"
+          viewBox="0 0 15 20"
+        >
+          <path d={iconData.location} />
+        </svg>
 
-          <h4 className="location">{userLocation}</h4>
-        </span>
-      )}
+        <h4 className="location">
+          {userLocation ? userLocation : 'None Listed'}
+        </h4>
+      </span>
     </div>
   );
 };
@@ -50,4 +73,3 @@ Details.propTypes = {
 //user image
 //username
 //location
-
