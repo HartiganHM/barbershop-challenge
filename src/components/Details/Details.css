@@ -6,14 +6,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 37.5rem;
   min-height: 62.5rem;
   margin: 0 auto; }
   .Details .close-icon {
     align-self: flex-end;
     width: 1.7rem;
-    margin: 0 2rem 2rem;
-    fill: #2F80ED; }
+    margin: 2rem;
+    fill: #2F80ED;
+    cursor: pointer; }
     .Details .close-icon:hover {
       fill: #33ADFF; }
     .Details .close-icon:active {
@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center; }
     .Details .user-wrapper .selected-image {
-      width: 33.5rem;
+      width: 120rem;
       margin-bottom: 2.67rem; }
     .Details .user-wrapper .user-image {
       width: 5.6rem;
@@ -38,7 +38,19 @@
   .Details .location-wrapper {
     display: flex;
     align-items: center;
-    margin: 2rem 2rem 0; }
+    margin: 2rem; }
     .Details .location-wrapper .location-icon {
       margin-right: 0.9rem;
       fill: #BDBDBD; }
+
+@media screen and (max-width: 1260px) {
+  .Details .close-icon {
+    margin: 0 2rem 2rem; }
+  .Details .user-wrapper .selected-image {
+    width: 560px; }
+  .Details .location-wrapper {
+    margin: 2rem 2rem 0; } }
+
+@media screen and (max-width: 620px) {
+  .Details .user-wrapper .selected-image {
+    width: 335px; } }
