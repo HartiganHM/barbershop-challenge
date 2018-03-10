@@ -71,3 +71,49 @@
     }
   }
 }
+
+@mixin threeQuartersBorder() {
+  &::before,
+  &::after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 2px solid transparent;
+    box-sizing: inherit;
+    content: '';
+  }
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+  &:hover::before,
+  &:hover::after {
+    height: 100%;
+    width: 100%;
+  }
+  &:hover::before {
+    border-top-color: $blue-highlight;
+    border-right-color: $blue-highlight;
+    transition:
+      width 0.1s ease-out,
+      height 0.1s ease-out 0.1s;
+  }
+  &:hover::after {
+    border-bottom-color: $blue-highlight;
+    border-left-color: $blue-highlight;
+    transition:
+      border-color 0s ease-out 0.2s,
+      width 0.1s ease-out 0.2s,
+      height 0.1s ease-out 0.3s;
+  }
+  &:active::before,
+  &:active::after {
+    border-top-color: $blue-lowlight;
+    border-right-color: $blue-lowlight;
+    border-bottom-color: $blue-lowlight;
+  }
+}

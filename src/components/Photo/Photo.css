@@ -20,6 +20,10 @@
     line-height: 137.5%;
     word-break: break-all;
     transition: 0.2s ease-in-out; }
+  .Photo:hover .photo-details-link {
+    color: #33ADFF; }
+  .Photo:active .photo-details-link {
+    color: #3F67D4; }
   .Photo::before, .Photo::after {
     position: absolute;
     height: 0;
@@ -33,20 +37,18 @@
   .Photo::after {
     bottom: 0;
     right: 0; }
-  .Photo:hover .photo-details-link {
-    color: #33ADFF; }
   .Photo:hover::before, .Photo:hover::after {
     height: 100%;
     width: 100%; }
   .Photo:hover::before {
     border-top-color: #33ADFF;
     border-right-color: #33ADFF;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+    transition: width 0.1s ease-out, height 0.1s ease-out 0.1s; }
   .Photo:hover::after {
     border-bottom-color: #33ADFF;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s; }
-  .Photo:active .photo-details-link, .Photo:active::before, .Photo:active::after {
-    color: #3F67D4;
+    border-left-color: #33ADFF;
+    transition: border-color 0s ease-out 0.2s, width 0.1s ease-out 0.2s, height 0.1s ease-out 0.3s; }
+  .Photo:active::before, .Photo:active::after {
     border-top-color: #3F67D4;
     border-right-color: #3F67D4;
     border-bottom-color: #3F67D4; }
