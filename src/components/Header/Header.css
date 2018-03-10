@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem; }
+  margin: 2rem; }
   .Header .header-title {
     margin: 0;
     font-size: 3.2rem; }
@@ -22,8 +22,14 @@
       background-color: #fff;
       color: #2F80ED;
       font-size: 1.6rem;
+      transition: 0.2s ease-in-out;
       cursor: pointer;
       width: 8rem; }
+      .Header .button-wrapper .view-button .view-icon {
+        fill: rgba(47, 128, 237, 0.7);
+        transition: 0.2s ease-in-out; }
+        .Header .button-wrapper .view-button .view-icon.selected {
+          fill: #fff; }
       .Header .button-wrapper .view-button:hover {
         background-color: #33ADFF;
         color: #fff; }
@@ -49,14 +55,11 @@
         background-color: #fff;
         color: #2F80ED;
         font-size: 1.6rem;
+        transition: 0.2s ease-in-out;
         cursor: pointer;
         background-color: #2F80ED;
         color: #fff;
         cursor: default; }
-    .Header .button-wrapper .view-icon {
-      fill: rgba(47, 128, 237, 0.7); }
-      .Header .button-wrapper .view-icon.selected {
-        fill: #fff; }
 
 @media screen and (max-width: 620px) {
   .Header .header-title {

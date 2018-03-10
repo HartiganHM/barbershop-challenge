@@ -1,18 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .Photo {
+  position: relative;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-left: -2rem;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #fff;
+  text-decoration: none; }
   .Photo .list-image {
-    width: 24rem;
-    margin: 2rem 0; }
+    width: 24rem; }
   .Photo .photo-details-link {
     margin: 0 4rem;
     color: #2F80ED;
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 137.5%;
-    word-break: break-all; }
+    word-break: break-all;
+    transition: 0.2s ease-in-out; }
+  .Photo:hover .photo-details-link {
+    color: #33ADFF; }
+  .Photo:active .photo-details-link {
+    color: #3F67D4; }
+  .Photo::before, .Photo::after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 2px solid transparent;
+    box-sizing: inherit;
+    content: ''; }
+  .Photo::before, .Photo::after {
+    top: 0;
+    left: 0; }
+  .Photo::after {
+    bottom: 0;
+    right: 0; }
+  .Photo:hover::before, .Photo:hover::after {
+    height: 100%;
+    width: 100%; }
+  .Photo:hover::before {
+    border-top-color: #33ADFF;
+    border-right-color: #33ADFF;
+    transition: width 0.2s ease-out, height 0.2s ease-out 0.2s; }
+  .Photo:hover::after {
+    border-bottom-color: #33ADFF;
+    border-left-color: #33ADFF;
+    transition: height 0.2s ease-out, width 0.2s ease-out 0.2s; }
+  .Photo:active::before, .Photo:active::after {
+    border-top-color: #3F67D4;
+    border-right-color: #3F67D4;
+    border-bottom-color: #3F67D4;
+    border-left-color: #3F67D4; }
 
 @media screen and (max-width: 1260px) {
   .Photo .grid-image {

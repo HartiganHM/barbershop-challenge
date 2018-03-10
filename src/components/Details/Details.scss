@@ -1,0 +1,108 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.Details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 62.5rem;
+  margin: 0 auto;
+  .close-icon {
+    align-self: flex-end;
+    width: 1.7rem;
+    margin: 2rem;
+    fill: $blue-midtone;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      fill: $blue-highlight;
+      transform: rotate(-90deg);
+    }
+    &:active {
+      fill: $blue-lowlight;
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .loader {
+      @include largeLoader;
+    }
+    .selected-image {
+      width: 120rem;
+      margin-bottom: 2.67rem;
+    }
+    .user-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000;
+      text-decoration: none;
+      transition: 0.1s ease-in-out;
+      .user-image {
+        width: 5.6rem;
+        border: 2px solid #fff;
+        border-radius: 5.6rem;
+        transition: 0.2s ease-in-out;
+      }
+      .fullname {
+        margin: 1.7rem 0 0.5rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+      .username {
+        margin: 0;
+        font-size: 1.4rem;
+      }
+      &:hover {
+        color: $blue-midtone;
+        .user-image {
+          border: 2px solid $blue-midtone;
+        }
+      }
+      &:active {
+        color: $blue-lowlight;
+        .user-image {
+          border: 2px solid $blue-lowlight;
+        }
+      }
+    }
+  }
+  .location-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    .location-icon {
+      margin-right: 0.9rem;
+      fill: $lightgrey;
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .Details {
+    .close-icon {
+      margin: 0 2rem 2rem;
+    }
+    .wrapper {
+      .selected-image {
+        width: 560px;
+      }
+    }
+    .location-wrapper {
+      margin: 2rem 2rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .Details {
+    .wrapper {
+      .selected-image {
+        width: 335px;
+      }
+    }
+  }
+}

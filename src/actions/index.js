@@ -22,3 +22,8 @@ export const changePhotosView = selectedView => ({
   type: 'CHANGE_VIEW',
   selectedView
 });
+
+export const sendSelectedPhotoToStore = selectedPhoto => ({
+  type: 'SET_SELECTED_PHOTO',
+  selectedPhoto
+});

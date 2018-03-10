@@ -1,12 +1,16 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
-
 .Photo {
+  position: relative;
   display: flex;
   align-items: center;
+  padding-left: -2rem;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #fff;
+  text-decoration: none;
   .list-image {
     width: 24rem;
-    margin: 2rem 0;
   }
   .photo-details-link {
     margin: 0 4rem;
@@ -15,7 +19,15 @@
     font-weight: 600;
     line-height: 137.5%;
     word-break: break-all;
+    transition: 0.2s ease-in-out;
   }
+  &:hover .photo-details-link {
+    color: $blue-highlight;
+  }
+  &:active .photo-details-link {
+    color: $blue-lowlight;
+  }
+  @include threeQuartersBorder;
 }
 
 @media screen and (max-width: 1260px) {
