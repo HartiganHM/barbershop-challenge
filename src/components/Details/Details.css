@@ -20,23 +20,40 @@
       transform: rotate(-90deg); }
     .Details .close-icon:active {
       fill: #3F67D4; }
-  .Details .user-wrapper {
+  .Details .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .Details .user-wrapper .selected-image {
+    .Details .wrapper .selected-image {
       width: 120rem;
       margin-bottom: 2.67rem; }
-    .Details .user-wrapper .user-image {
-      width: 5.6rem;
-      border-radius: 5.6rem; }
-    .Details .user-wrapper .fullname {
-      margin: 1.7rem 0 0.5rem;
-      font-size: 2.4rem;
-      font-weight: 700; }
-    .Details .user-wrapper .username {
-      margin: 0;
-      font-size: 1.4rem; }
+    .Details .wrapper .user-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000;
+      text-decoration: none;
+      transition: 0.1s ease-in-out; }
+      .Details .wrapper .user-wrapper .user-image {
+        width: 5.6rem;
+        border: 2px solid #fff;
+        border-radius: 5.6rem;
+        transition: 0.1s ease-in-out; }
+      .Details .wrapper .user-wrapper .fullname {
+        margin: 1.7rem 0 0.5rem;
+        font-size: 2.4rem;
+        font-weight: 700; }
+      .Details .wrapper .user-wrapper .username {
+        margin: 0;
+        font-size: 1.4rem; }
+      .Details .wrapper .user-wrapper:hover {
+        color: #2F80ED; }
+        .Details .wrapper .user-wrapper:hover .user-image {
+          border: 2px solid #2F80ED; }
+      .Details .wrapper .user-wrapper:active {
+        color: #3F67D4; }
+        .Details .wrapper .user-wrapper:active .user-image {
+          border: 2px solid #3F67D4; }
   .Details .location-wrapper {
     display: flex;
     align-items: center;
@@ -48,11 +65,11 @@
 @media screen and (max-width: 1260px) {
   .Details .close-icon {
     margin: 0 2rem 2rem; }
-  .Details .user-wrapper .selected-image {
+  .Details .wrapper .selected-image {
     width: 560px; }
   .Details .location-wrapper {
     margin: 2rem 2rem 0; } }
 
 @media screen and (max-width: 620px) {
-  .Details .user-wrapper .selected-image {
+  .Details .wrapper .selected-image {
     width: 335px; } }
