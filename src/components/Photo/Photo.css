@@ -31,7 +31,7 @@
     border: 2px solid transparent;
     box-sizing: inherit;
     content: ''; }
-  .Photo::before {
+  .Photo::before, .Photo::after {
     top: 0;
     left: 0; }
   .Photo::after {
@@ -43,15 +43,16 @@
   .Photo:hover::before {
     border-top-color: #33ADFF;
     border-right-color: #33ADFF;
-    transition: width 0.1s ease-out, height 0.1s ease-out 0.1s; }
+    transition: width 0.2s ease-out, height 0.2s ease-out 0.2s; }
   .Photo:hover::after {
     border-bottom-color: #33ADFF;
     border-left-color: #33ADFF;
-    transition: border-color 0s ease-out 0.2s, width 0.1s ease-out 0.2s, height 0.1s ease-out 0.3s; }
+    transition: height 0.2s ease-out, width 0.2s ease-out 0.2s; }
   .Photo:active::before, .Photo:active::after {
     border-top-color: #3F67D4;
     border-right-color: #3F67D4;
-    border-bottom-color: #3F67D4; }
+    border-bottom-color: #3F67D4;
+    border-left-color: #3F67D4; }
 
 @media screen and (max-width: 1260px) {
   .Photo .grid-image {

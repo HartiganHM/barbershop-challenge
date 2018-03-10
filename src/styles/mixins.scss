@@ -82,7 +82,8 @@
     box-sizing: inherit;
     content: '';
   }
-  &::before {
+  &::before,
+  &::after {
     top: 0;
     left: 0;
   }
@@ -99,21 +100,21 @@
     border-top-color: $blue-highlight;
     border-right-color: $blue-highlight;
     transition:
-      width 0.1s ease-out,
-      height 0.1s ease-out 0.1s;
+      width 0.2s ease-out,
+      height 0.2s ease-out 0.2s;
   }
   &:hover::after {
     border-bottom-color: $blue-highlight;
     border-left-color: $blue-highlight;
     transition:
-      border-color 0s ease-out 0.2s,
-      width 0.1s ease-out 0.2s,
-      height 0.1s ease-out 0.3s;
+      height 0.2s ease-out,
+      width 0.2s ease-out 0.2s;
   }
   &:active::before,
   &:active::after {
     border-top-color: $blue-lowlight;
     border-right-color: $blue-lowlight;
     border-bottom-color: $blue-lowlight;
+    border-left-color: $blue-lowlight;
   }
 }
