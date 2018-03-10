@@ -12,7 +12,9 @@ const Details = props => {
   const { selectedPhoto } = props;
   const { goBack } = props.history;
 
-  const imageSource = selectedPhoto.urls.full;
+  const fullImage = selectedPhoto.urls.full;
+  const regularImage = selectedPhoto.urls.regular;
+
   const imageAlt = selectedPhoto.description;
   const userFullName = selectedPhoto.user.name;
   const userImage = selectedPhoto.user.profile_image.large;
@@ -43,11 +45,18 @@ const Details = props => {
       </svg>
 
       <div className="user-wrapper">
-        <img className="selected-image" src={imageSource} alt={imageAlt} />
+        <picture>
+          <source srcSet={regularImage} media="(max-width: 1260px)" />
+          <img className="selected-image" src={fullImage} alt={imageAlt} />
+        </picture>
+
         <img className="user-image" src={userImage} alt={userUsername} />
+
         <h2 className="fullname">{userFullName}</h2>
+
         <h3 className="username">{userUsername}</h3>
       </div>
+
       <span className="location-wrapper">
         <svg
           className="location-icon"
