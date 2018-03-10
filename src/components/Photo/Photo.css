@@ -14,6 +14,10 @@
     font-weight: 600;
     line-height: 137.5%;
     word-break: break-all; }
+    .Photo .photo-details-link:hover {
+      color: #33ADFF; }
+    .Photo .photo-details-link:active {
+      color: #3F67D4; }
 
 @media screen and (max-width: 1260px) {
   .Photo .grid-image {

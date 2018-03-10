@@ -16,6 +16,12 @@
     font-weight: 600;
     line-height: 137.5%;
     word-break: break-all;
+    &:hover {
+      color: $blue-highlight;
+    }
+    &:active {
+      color: $blue-lowlight;
+    }
   }
 }
 
