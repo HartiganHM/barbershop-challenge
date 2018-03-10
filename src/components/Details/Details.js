@@ -57,10 +57,10 @@ const Details = props => {
       <div className="wrapper">
         {
           !fullImage ? (loader) : (
-          <picture>
-            <source srcSet={regularImage} media="(max-width: 1260px)" />
-            <img className="selected-image" src={fullImage} alt={imageAlt} />
-          </picture>
+            <picture>
+              <source srcSet={regularImage} media="(max-width: 1260px)" />
+              <img className="selected-image" src={fullImage} alt={imageAlt} />
+            </picture>
           )
         }
 
