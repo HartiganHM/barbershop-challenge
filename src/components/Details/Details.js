@@ -10,7 +10,7 @@ const Details = props => {
   window.scrollTo(0, 0);
 
   const { selectedPhoto } = props;
-  const { push } = props.history;
+  const { goBack } = props.history;
 
   const imageSource = selectedPhoto.urls.regular;
   const imageAlt = selectedPhoto.description;
@@ -23,7 +23,7 @@ const Details = props => {
     <div className="Details">
       <svg
         className="close-icon"
-        onClick={() => push('/')}
+        onClick={() => goBack()}
         viewBox="0 0 17.99 17.99"
       >
         <rect
