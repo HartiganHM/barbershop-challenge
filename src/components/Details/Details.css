@@ -13,9 +13,11 @@
     width: 1.7rem;
     margin: 2rem;
     fill: #2F80ED;
+    transition: 0.2s;
     cursor: pointer; }
     .Details .close-icon:hover {
-      fill: #33ADFF; }
+      fill: #33ADFF;
+      transform: rotate(-90deg); }
     .Details .close-icon:active {
       fill: #3F67D4; }
   .Details .user-wrapper {

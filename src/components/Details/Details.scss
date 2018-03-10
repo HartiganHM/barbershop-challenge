@@ -14,9 +14,11 @@
     width: 1.7rem;
     margin: 2rem;
     fill: $blue-midtone;
+    transition: 0.2s;
     cursor: pointer;
     &:hover {
-      fill: $blue-highlight
+      fill: $blue-highlight;
+      transform: rotate(-90deg);
     }
     &:active {
       fill: $blue-lowlight;
