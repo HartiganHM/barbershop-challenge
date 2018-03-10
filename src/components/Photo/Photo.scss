@@ -1,9 +1,13 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
-
 .Photo {
+  position: relative;
   display: flex;
   align-items: center;
+  padding-left: -2rem;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #fff;
   text-decoration: none;
   .list-image {
     width: 24rem;
@@ -16,13 +20,55 @@
     font-weight: 600;
     line-height: 137.5%;
     word-break: break-all;
-    &:hover {
-      color: $blue-highlight;
-    }
-    &:active {
-      color: $blue-lowlight;
-    }
+    transition: 0.2s ease-in-out;
   }
+  &::before,
+  &::after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 2px solid transparent;
+    box-sizing: inherit;
+    content: '';
+  }
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+  &:hover .photo-details-link {
+    color: $blue-highlight;
+  }
+  &:hover::before,
+  &:hover::after {
+    height: 100%;
+    width: 100%;
+  }
+  &:hover::before {
+    border-top-color: $blue-highlight;
+    border-right-color: $blue-highlight;
+    transition:
+      width 0.25s ease-out,
+      height 0.25s ease-out 0.25s;
+  }
+  &:hover::after {
+    border-bottom-color: $blue-highlight;
+    transition:
+      border-color 0s ease-out 0.5s,
+      width 0.25s ease-out 0.5s;
+  }
+  &:active .photo-details-link,
+  &:active::before,
+  &:active::after {
+    color: $blue-lowlight;
+    border-top-color: $blue-lowlight;
+    border-right-color: $blue-lowlight;
+    border-bottom-color: $blue-lowlight;
+  }
+
 }
 
 @media screen and (max-width: 1260px) {
