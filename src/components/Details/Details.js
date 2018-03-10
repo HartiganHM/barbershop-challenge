@@ -22,6 +22,15 @@ const Details = props => {
   const userProfile = selectedPhoto.user.links.html;
   const userLocation = selectedPhoto.user.location;
 
+  const loader = (
+    <div className="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
+
   return (
     <div className="Details">
       <svg
@@ -46,10 +55,14 @@ const Details = props => {
       </svg>
 
       <div className="wrapper">
-        <picture>
-          <source srcSet={regularImage} media="(max-width: 1260px)" />
-          <img className="selected-image" src={fullImage} alt={imageAlt} />
-        </picture>
+        {
+          !fullImage ? (loader) : (
+          <picture>
+            <source srcSet={regularImage} media="(max-width: 1260px)" />
+            <img className="selected-image" src={fullImage} alt={imageAlt} />
+          </picture>
+          )
+        }
 
         <a className="user-wrapper" target="_blank" href={userProfile}>
           <img className="user-image" src={userImage} alt={userUsername} />
