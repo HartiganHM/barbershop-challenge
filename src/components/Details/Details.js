@@ -7,7 +7,8 @@ import PropTypes from 'prop-types';
 import './Details.css';
 
 const Details = props => {
-  console.log(props);
+  window.scrollTo(0, 0);
+
   const { selectedPhoto } = props;
   const { push } = props.history;
 
