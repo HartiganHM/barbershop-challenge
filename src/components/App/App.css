@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .App {
   width: 124rem;
-  margin: 2rem auto; }
+  margin: 0 auto; }
 
 @media screen and (max-width: 1260px) {
   .App {
