@@ -12,7 +12,7 @@ const Details = props => {
   const { selectedPhoto } = props;
   const { goBack } = props.history;
 
-  const imageSource = selectedPhoto.urls.regular;
+  const imageSource = selectedPhoto.urls.full;
   const imageAlt = selectedPhoto.description;
   const userFullName = selectedPhoto.user.name;
   const userImage = selectedPhoto.user.profile_image.large;
