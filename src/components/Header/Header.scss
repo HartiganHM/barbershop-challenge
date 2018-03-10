@@ -16,6 +16,13 @@
     .view-button {
       @include buttonDefault;
       width: 8rem;
+      .view-icon {
+        fill: $blue-midtone-transparent;
+        transition: 0.2s ease-in-out;
+        &.selected {
+          fill: #fff;
+        }
+      }
       &:hover {
         @include buttonHover;
         .view-icon {
@@ -36,12 +43,6 @@
       }
       &.selected {
         @include buttonDefaultAlternate;
-      }
-    }
-    .view-icon {
-      fill: $blue-midtone-transparent;
-      &.selected {
-        fill: #fff;
       }
     }
   }
