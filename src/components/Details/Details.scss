@@ -8,12 +8,12 @@
   align-items: center;
   justify-content: space-between;
   width: 37.5rem;
-  min-height: 72rem;
-  margin: 2rem auto;
+  min-height: 62.5rem;
+  margin: 0 auto;
   .close-icon {
     align-self: flex-end;
     width: 1.7rem;
-    margin: 2rem;
+    margin: 0 2rem 2rem;
     fill: $blue-midtone;
     &:hover {
       fill: $blue-highlight
@@ -47,6 +47,7 @@
   .location-wrapper {
     display: flex;
     align-items: center;
+    margin: 2rem 2rem 0;
     .location-icon {
       margin-right: 0.9rem;
       fill: $lightgrey;
