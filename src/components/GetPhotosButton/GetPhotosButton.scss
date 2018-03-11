@@ -9,16 +9,21 @@
   width: 18rem;
   margin: 2rem;
   cursor: pointer;
-  .get-photos-icon {
+  .plus-icon {
     width: 16px;
     margin: 0.5rem;
     fill: $white-transparent;
+    transition: 0.2s;
   }
   .get-photos-text {
     margin: 0.5rem;
   }
   &:hover {
     @include buttonHover;
+    .plus-icon {
+      fill: #FFF;
+      transform: rotate(-90deg);
+    }
   }
   &:active {
     @include buttonActive;

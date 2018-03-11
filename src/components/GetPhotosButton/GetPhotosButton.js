@@ -8,7 +8,7 @@ import './GetPhotosButton.css';
 const GetPhotosButton = props => {
   const { photos, getMorePhotos } = props;
   const plusIcon = (
-    <svg viewBox="0 0 15 14" className="get-photos-icon">
+    <svg viewBox="0 0 13.33 13.33" className="plus-icon">
       <path d={iconData.getPhotos} />
     </svg>
   );

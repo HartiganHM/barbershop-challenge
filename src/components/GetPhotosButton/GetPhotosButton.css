@@ -21,15 +21,19 @@
   width: 18rem;
   margin: 2rem;
   cursor: pointer; }
-  .GetPhotosButton .get-photos-icon {
+  .GetPhotosButton .plus-icon {
     width: 16px;
     margin: 0.5rem;
-    fill: rgba(255, 255, 255, 0.7); }
+    fill: rgba(255, 255, 255, 0.7);
+    transition: 0.2s; }
   .GetPhotosButton .get-photos-text {
     margin: 0.5rem; }
   .GetPhotosButton:hover {
     background-color: #33ADFF;
     color: #fff; }
+    .GetPhotosButton:hover .plus-icon {
+      fill: #FFF;
+      transform: rotate(-90deg); }
   .GetPhotosButton:active {
     background-color: #3F67D4;
     color: #fff; }
