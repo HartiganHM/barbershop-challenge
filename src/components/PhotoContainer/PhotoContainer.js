@@ -9,7 +9,7 @@ const PhotoContainer = props => {
   const currentClass = 'PhotoContainer ' + currentView;
 
   const renderedPhotos = photos.map(photo => {
-    return <Photo key={photo.id} photoData={photo} currentView={currentView}/>;
+    return <Photo key={photo.id} photoData={photo} currentView={currentView} />;
   });
 
   return <div className={currentClass}>{renderedPhotos}</div>;
@@ -20,7 +20,12 @@ const mapStateToProps = store => ({
   currentView: store.currentView
 });
 
-export default connect(mapStateToProps, null)(PhotoContainer);
+const mapDispatchToProps = dispatch => ({
+  getMorePhotos: currentPhotoLength =>
+    dispatch(getMorePhotos(currentPhotoLength))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PhotoContainer);
 
 PhotoContainer.propTypes = {
   photos: PropTypes.array,
