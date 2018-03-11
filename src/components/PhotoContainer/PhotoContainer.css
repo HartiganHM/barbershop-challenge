@@ -1,9 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .PhotoContainer {
   display: grid;
   grid-gap: 20px;
   margin: 2rem; }
   .PhotoContainer.Grid {
     grid-template-columns: repeat(3, 1fr); }
+  .PhotoContainer .get-photos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #2F80ED;
+    font-size: 1.6rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #2F80ED;
+    color: #fff;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    width: 18rem; }
+    .PhotoContainer .get-photos .get-photos-icon {
+      width: 16px;
+      margin: 0.5rem;
+      fill: rgba(255, 255, 255, 0.7); }
+    .PhotoContainer .get-photos .get-photos-text {
+      margin: 0.5rem; }
 
 @media screen and (max-width: 1260px) {
   .PhotoContainer.Grid {

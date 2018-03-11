@@ -22,10 +22,11 @@ const PhotoContainer = props => {
         className="get-photos"
         onClick={() => getMorePhotos(photos.length)}
       >
-        <svg width="15" height="14" viewBox="0 0 15 14">
+        <svg viewBox="0 0 15 14" className="get-photos-icon">
           <path d={iconData.getPhotos} />
         </svg>
-        Get Photos
+
+        <span className="get-photos-text">Get Photos</span>
       </a>
     </div>
   );

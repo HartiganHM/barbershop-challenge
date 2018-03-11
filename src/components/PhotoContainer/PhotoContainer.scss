@@ -1,9 +1,26 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .PhotoContainer {
   display: grid;
   grid-gap: 20px;
   margin: 2rem;
   &.Grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .get-photos {
+    @include buttonDefaultAlternate;
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    .get-photos-icon {
+      width: 16px;
+      margin: 0.5rem;
+      fill: $white-transparent;
+    }
+    .get-photos-text {
+      margin: 0.5rem;
+    }
   }
 }
 
