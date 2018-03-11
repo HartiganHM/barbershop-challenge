@@ -17,25 +17,15 @@ class Routes extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <Route
-          exact
-          path="/"
-          render={() => {
-            return (
-              <div>
-                <Header />
-                <PhotoContainer />
-                <GetPhotosButton />
-              </div>
-            );
-          }}
-        />
-        <Route path="/details/:photoId" component={Details} />
-        <Route exact path="/styleguide" component={StyleGuide} />
-      </div>
-    );
+    return [
+      <Route
+        exact
+        path="/"
+        render={() => [<Header />, <PhotoContainer />, <GetPhotosButton />]}
+      />,
+      <Route path="/details/:photoId" component={Details} />,
+      <Route exact path="/styleguide" component={StyleGuide} />
+    ];
   }
 }
 
