@@ -25,12 +25,17 @@ class Routes extends Component {
   }
 }
 
+const mapStateToProps = store => ({
+  photos: store.photos
+});
+
 const mapDispatchToProps = dispatch => ({
   populatePhotos: () => dispatch(actions.populatePhotos())
 });
 
-export default connect(null, mapDispatchToProps)(Routes);
+export default connect(mapStateToProps, mapDispatchToProps)(Routes);
 
 Routes.propTypes = {
+  photos: PropTypes.array,
   populatePhotos: PropTypes.func
 };
