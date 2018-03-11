@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Photo from '../Photo/Photo';
 import iconData from '../../data/iconData';
+import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import './PhotoContainer.css';
 
@@ -37,7 +38,7 @@ const mapStateToProps = store => ({
 
 const mapDispatchToProps = dispatch => ({
   getMorePhotos: currentPhotoLength =>
-    dispatch(getMorePhotos(currentPhotoLength))
+    dispatch(actions.getMorePhotos(currentPhotoLength))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PhotoContainer);
