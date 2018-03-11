@@ -2,8 +2,10 @@ import unsplash from '../unsplash/unsplash';
 
 const getPhotos = async currentPhotoLength => {
   try {
-    const photoStart = currentPhotoLength + 1;
-    const photoEnd = currentPhotoLength + 6;
+    const photoLength = currentPhotoLength ? currentPhotoLength : 0;
+    const photoStart = photoLength + 1;
+    const photoEnd = photoLength + 6;
+
     const fetchedPhotos = await unsplash.photos.listPhotos(photoStart, photoEnd, 'popular');
     const jsonPhotos = await fetchedPhotos.json();
 
