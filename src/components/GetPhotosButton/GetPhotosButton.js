@@ -7,12 +7,24 @@ import './GetPhotosButton.css';
 
 const GetPhotosButton = props => {
   const { photos, getMorePhotos } = props;
+  const plusIcon = (
+    <svg viewBox="0 0 15 14" className="get-photos-icon">
+      <path d={iconData.getPhotos} />
+    </svg>
+  );
+
+  const loader = (
+    <div className="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
 
   return (
     <a className="GetPhotosButton" onClick={() => getMorePhotos(photos.length)}>
-      <svg viewBox="0 0 15 14" className="get-photos-icon">
-        <path d={iconData.getPhotos} />
-      </svg>
+      {plusIcon}
 
       <span className="get-photos-text">Get Photos</span>
     </a>
