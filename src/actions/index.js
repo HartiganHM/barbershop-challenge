@@ -13,6 +13,11 @@ export const populatePhotos = currentPhotoLength => async dispatch => {
   dispatch(sendPhotosToStore(photos));
 };
 
+export const getMorePhotos = currentPhotoLength => async dispatch => {
+  const photos = await getPhotos(currentPhotoLength);
+  dispatch(sendPhotosToStore(photos));
+};
+
 export const sendPhotosToStore = photos => ({
   type: 'PHOTOS_TO_STORE',
   photos
