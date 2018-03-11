@@ -7,6 +7,7 @@ import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
 import GetPhotosButton from '../GetPhotosButton/GetPhotosButton';
 import StyleGuide from '../StyleGuide/StyleGuide';
+import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 
 class Routes extends Component {
@@ -19,12 +20,26 @@ class Routes extends Component {
   render() {
     return [
       <Route
+        key={generateUniqueKey()}
         exact
         path="/"
-        render={() => [<Header />, <PhotoContainer />, <GetPhotosButton />]}
+        render={() => [
+          <Header key={generateUniqueKey()} />,
+          <PhotoContainer key={generateUniqueKey()} />,
+          <GetPhotosButton key={generateUniqueKey()} />
+        ]}
       />,
-      <Route path="/details/:photoId" component={Details} />,
-      <Route exact path="/styleguide" component={StyleGuide} />
+      <Route
+        key={generateUniqueKey()}
+        path="/details/:photoId"
+        component={Details}
+      />,
+      <Route
+        key={generateUniqueKey()}
+        exact
+        path="/styleguide"
+        component={StyleGuide}
+      />
     ];
   }
 }
