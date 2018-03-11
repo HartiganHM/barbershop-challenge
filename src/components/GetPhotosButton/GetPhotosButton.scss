@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.GetPhotosButton {
+  @include buttonDefaultAlternate;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  width: 18rem;
+  cursor: pointer;
+  .get-photos-icon {
+    width: 16px;
+    margin: 0.5rem;
+    fill: $white-transparent;
+  }
+  .get-photos-text {
+    margin: 0.5rem;
+  }
+  &:hover {
+    @include buttonHover;
+  }
+  &:active {
+    @include buttonActive;
+  }
+}
