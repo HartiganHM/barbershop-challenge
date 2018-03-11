@@ -1,5 +1,7 @@
 @import '../../styles/variables.scss';
 .App {
+  display: flex;
+  flex-direction: column;
   width: 124rem;
   margin: 0 auto;
 }
@@ -7,7 +9,6 @@
 @media screen and (max-width: 1260px) {
   .App {
     width: 600px;
-    margin: 20px auto;
   }
 }
 
