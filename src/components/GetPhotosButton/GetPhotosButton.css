@@ -15,10 +15,11 @@
   background-color: #2F80ED;
   color: #fff;
   cursor: default;
-  justify-self: center;
+  align-self: center;
   display: flex;
   justify-content: center;
   width: 18rem;
+  margin: 2rem;
   cursor: pointer; }
   .GetPhotosButton .get-photos-icon {
     width: 16px;
