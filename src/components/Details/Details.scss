@@ -11,7 +11,7 @@
   .close-icon {
     align-self: flex-end;
     width: 1.7rem;
-    margin: 2rem;
+    margin: 2rem 0;
     fill: $blue-midtone;
     transition: 0.2s;
     cursor: pointer;
@@ -83,16 +83,10 @@
 
 @media screen and (max-width: 1260px) {
   .Details {
-    .close-icon {
-      margin: 0 2rem 2rem;
-    }
     .wrapper {
       .selected-image {
         width: 560px;
       }
-    }
-    .location-wrapper {
-      margin: 2rem 2rem 0;
     }
   }
 }
