@@ -22,7 +22,7 @@
     color: #fff;
     cursor: default;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     width: 18rem; }
     .PhotoContainer .get-photos .get-photos-icon {
       width: 16px;

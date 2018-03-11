@@ -11,7 +11,7 @@
   .get-photos {
     @include buttonDefaultAlternate;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     width: 18rem;
     .get-photos-icon {
       width: 16px;
