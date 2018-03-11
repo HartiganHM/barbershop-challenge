@@ -32,6 +32,12 @@
       fill: rgba(255, 255, 255, 0.7); }
     .PhotoContainer .get-photos .get-photos-text {
       margin: 0.5rem; }
+    .PhotoContainer .get-photos:hover {
+      background-color: #33ADFF;
+      color: #fff; }
+    .PhotoContainer .get-photos:active {
+      background-color: #3F67D4;
+      color: #fff; }
 
 @media screen and (max-width: 1260px) {
   .PhotoContainer.Grid {

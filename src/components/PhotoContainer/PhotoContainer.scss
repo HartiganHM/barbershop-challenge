@@ -23,6 +23,12 @@
     .get-photos-text {
       margin: 0.5rem;
     }
+    &:hover {
+      @include buttonHover;
+    }
+    &:active {
+      @include buttonActive;
+    }
   }
 }
 
