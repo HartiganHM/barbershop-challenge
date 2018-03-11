@@ -5,6 +5,7 @@ import { PropTypes } from 'prop-types';
 import Details from '../Details/Details';
 import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
+import GetPhotosButton from '../GetPhotosButton/GetPhotosButton';
 import StyleGuide from '../StyleGuide/StyleGuide';
 import * as actions from '../../actions';
 
@@ -18,8 +19,19 @@ class Routes extends Component {
   render() {
     return (
       <div>
-        <Route exact path="/" component={Header} />
-        <Route exact path="/" component={PhotoContainer} />
+        <Route
+          exact
+          path="/"
+          render={() => {
+            return (
+              <div>
+                <Header />
+                <PhotoContainer />
+                <GetPhotosButton />
+              </div>
+            );
+          }}
+        />
         <Route path="/details/:photoId" component={Details} />
         <Route exact path="/styleguide" component={StyleGuide} />
       </div>
