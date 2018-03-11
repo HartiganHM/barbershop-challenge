@@ -21,9 +21,11 @@
     background-color: #2F80ED;
     color: #fff;
     cursor: default;
-    display: flex;
     justify-self: center;
-    width: 18rem; }
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    cursor: pointer; }
     .PhotoContainer .get-photos .get-photos-icon {
       width: 16px;
       margin: 0.5rem;

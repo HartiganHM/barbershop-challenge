@@ -10,9 +10,11 @@
   }
   .get-photos {
     @include buttonDefaultAlternate;
-    display: flex;
     justify-self: center;
+    display: flex;
+    justify-content: center;
     width: 18rem;
+    cursor: pointer;
     .get-photos-icon {
       width: 16px;
       margin: 0.5rem;
