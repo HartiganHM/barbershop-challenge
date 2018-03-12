@@ -36,12 +36,8 @@
       box-sizing: border-box;
       display: block;
       position: absolute;
-      width: 2.6rem;
-      height: 2.6rem;
-      border: 3px solid #fff;
       border-radius: 50%;
-      animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-      border-color: #fff transparent transparent transparent; }
+      animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; }
     .GetPhotosButton .loader div:nth-child(1) {
       animation-delay: -0.45s; }
     .GetPhotosButton .loader div:nth-child(2) {
@@ -54,6 +50,11 @@
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+    .GetPhotosButton .loader div {
+      width: 2.6rem;
+      height: 2.6rem;
+      border: 3px solid #fff;
+      border-color: #fff transparent transparent transparent; }
   .GetPhotosButton .get-photos-text {
     margin: 0.5rem; }
   .GetPhotosButton:hover {
