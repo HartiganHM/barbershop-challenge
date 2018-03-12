@@ -42,7 +42,8 @@
           fill: #fff; }
       .Header .button-wrapper .view-button:disabled {
         background-color: #8EB7ED;
-        color: #fff; }
+        color: #fff;
+        pointer-events: none; }
         .Header .button-wrapper .view-button:disabled .view-icon {
           fill: #fff; }
       .Header .button-wrapper .view-button.selected {
