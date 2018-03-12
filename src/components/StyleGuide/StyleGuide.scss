@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.StyleGuide {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .button {
+      @include buttonDefaultAlternate;
+      display: flex;
+      justify-content: center;
+      width: 18rem;
+      margin: 1.35rem;
+      cursor: pointer;
+      .plus-icon {
+        width: 16px;
+        margin: 0.5rem;
+        fill: $white-transparent;
+        transition: 0.2s;
+      }
+      .loading-icon {
+        @include buttonLoader;
+        align-self: center;
+      }
+      &.text-icon:hover {
+        .plus-icon {
+          fill: #FFF;
+          transform: rotate(-90deg);
+        }
+      }
+      &.hover-focus {
+        @include buttonHover;
+      }
+      &.active {
+        @include buttonActive;
+      }
+      &.disabled {
+        @include buttonDisabled;
+        cursor: not-allowed;
+      }
+      &.loader {
+        @include buttonDisabled;
+        cursor: wait;
+      }
+    }
+    .button-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18rem;
+      color: $darkgrey;
+      font-size: 1.6rem;
+    }
+  }
+}
