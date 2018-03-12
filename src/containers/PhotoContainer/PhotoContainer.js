@@ -5,7 +5,7 @@ import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey
 import PropTypes from 'prop-types';
 import './PhotoContainer.css';
 
-const PhotoContainer = props => {
+export const PhotoContainer = props => {
   const { photos, currentView } = props;
   const currentClass = 'PhotoContainer ' + currentView;
 
@@ -22,7 +22,7 @@ const PhotoContainer = props => {
   return <div className={currentClass}>{renderedPhotos}</div>;
 };
 
-const mapStateToProps = store => ({
+export const mapStateToProps = store => ({
   photos: store.photos,
   currentView: store.currentView
 });

@@ -1,28 +1,33 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import iconData from '../../data/iconData';
+import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import './Header.css';
 
-const Header = props => {
+export const Header = props => {
   const { currentView, changePhotosView } = props;
 
   const buttons = ['Grid', 'List'];
 
-  const renderButtons = buttons.map((button, index) => {
-    const currentClass =
-      currentView === button ? 'view-button selected' : 'view-button';
-    const iconClass =
-      currentView === button ? 'view-icon selected' : 'view-icon';
+  const renderButtons = buttons.map(button => {
+    const checkSelected = currentClass => {
+      return currentView === button ? currentClass + ' selected' : currentClass;
+    };
 
     return (
       <a
-        key={index}
-        className={currentClass}
+        key={generateUniqueKey()}
+        className={checkSelected('view-button')}
         onClick={() => changePhotosView(button)}
       >
-        <svg className={iconClass} width="13" height="10" viewBox="0 0 13 10">
+        <svg
+          className={checkSelected('view-icon')}
+          width="13"
+          height="10"
+          viewBox="0 0 13 10"
+        >
           <path d={iconData[button]} />
         </svg>
         {button}
@@ -39,11 +44,11 @@ const Header = props => {
   );
 };
 
-const mapStateToProps = store => ({
+export const mapStateToProps = store => ({
   currentView: store.currentView
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   changePhotosView: selectedView =>
     dispatch(actions.changePhotosView(selectedView))
 });

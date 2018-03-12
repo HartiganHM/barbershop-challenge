@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import * as actions from '../../actions';
 import './Photo.css';
 
-const Photo = props => {
+export const Photo = props => {
   const { photoData, currentView, sendSelectedPhotoToStore } = props;
   const imageUrl = photoData.links.html;
   const imageSource = photoData.urls.small;
@@ -26,7 +26,7 @@ const Photo = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   sendSelectedPhotoToStore: selectedPhoto =>
     dispatch(actions.sendSelectedPhotoToStore(selectedPhoto))
 });

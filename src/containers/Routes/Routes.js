@@ -6,14 +6,13 @@ import Details from '../Details/Details';
 import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
 import GetPhotosButton from '../GetPhotosButton/GetPhotosButton';
-import StyleGuide from '../StyleGuide/StyleGuide';
+import StyleGuide from '../../components/StyleGuide/StyleGuide';
 import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 
-class Routes extends Component {
+export class Routes extends Component {
   componentDidMount() {
     const { photos, populatePhotos } = this.props;
-
     populatePhotos(photos.length);
   }
 
@@ -29,11 +28,13 @@ class Routes extends Component {
           <GetPhotosButton key={generateUniqueKey()} />
         ]}
       />,
+
       <Route
         key={generateUniqueKey()}
         path="/details/:photoId"
         component={Details}
       />,
+
       <Route
         key={generateUniqueKey()}
         exact
@@ -44,11 +45,11 @@ class Routes extends Component {
   }
 }
 
-const mapStateToProps = store => ({
+export const mapStateToProps = store => ({
   photos: store.photos
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   populatePhotos: () => dispatch(actions.populatePhotos())
 });
 
