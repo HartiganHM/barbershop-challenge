@@ -9,7 +9,7 @@ const StyleGuideButton = () => {
       <svg viewBox="0 0 19.3 19.3" className="style-icon">
         <path d={iconData.style} />
       </svg>
-      <span className="home-text">Style Guide</span>
+      <span className="style-text">Style Guide</span>
     </Link>
   );
 };

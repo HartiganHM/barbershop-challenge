@@ -25,9 +25,10 @@
   .StyleGuideButton .style-icon {
     width: 16px;
     margin: 0.5rem;
-    margin-right: 1.5rem;
     fill: rgba(255, 255, 255, 0.7);
     transition: 0.2s; }
+  .StyleGuideButton .style-text {
+    margin-left: 1rem; }
   .StyleGuideButton:hover {
     background-color: #33ADFF;
     color: #fff; }

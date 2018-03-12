@@ -12,9 +12,11 @@
   .style-icon {
     width: 16px;
     margin: 0.5rem;
-    margin-right: 1.5rem;
     fill: $white-transparent;
     transition: 0.2s;
+  }
+  .style-text {
+    margin-left: 1rem;
   }
   &:hover {
     @include buttonHover;
