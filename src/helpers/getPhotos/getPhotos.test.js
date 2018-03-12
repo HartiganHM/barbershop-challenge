@@ -7,8 +7,8 @@ jest.mock('../../helpers/unsplash/unsplash.js', () => {
     photos: {
       listPhotos: jest.fn(() => mockUnsplashResponse)
     }
-  }
-})
+  };
+});
 
 describe('getPhotos tests', () => {
   it('Should be a function', () => {

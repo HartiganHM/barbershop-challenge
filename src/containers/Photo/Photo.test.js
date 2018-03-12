@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Photo, mapDispatchToProps } from './Photo';
 import mockPhoto from '../../data/mockData/mockPhoto';
-import * as actions from '../../actions';
 
 describe('Photo tests', () => {
   let photoData;

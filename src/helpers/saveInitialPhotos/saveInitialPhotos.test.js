@@ -13,7 +13,7 @@ describe('getSavedPhotos tests', () => {
   });
 
   it('Should set photos to localStorage', () => {
-    const mockReturn = saveInitialPhoto([mockPhoto]);
+    saveInitialPhoto([mockPhoto]);
     const localStorageKey = 'hh-barbershop3';
 
     expect(localStorage[localStorageKey]).toEqual(JSON.stringify([mockPhoto]));

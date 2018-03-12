@@ -6,7 +6,6 @@ import {
   mapDispatchToProps
 } from './GetPhotosButton';
 import mockPhoto from '../../data/mockData/mockPhoto';
-import * as actions from '../../actions';
 
 jest.mock('../../helpers/generateUniqueKey/generateUniqueKey.js', () => {
   return jest.fn(() => 1);
@@ -47,14 +46,14 @@ describe('GetPhotosButton tests', () => {
     expect(getMorePhotos).toHaveBeenCalled();
   });
 
-  it('Should not have a class of loading or a loader if imageTotal matches photos total', () => {
+  it('Should not have a class of loading/loader if imageTotal matches photos total', () => {
     const expected = 0;
 
     expect(renderedGetPhotosButton.find('.loading').length).toEqual(expected);
     expect(renderedGetPhotosButton.find('.loader').length).toEqual(expected);
   });
 
-  it('Should have a class of loading and a loader if imageTotal does not match photos total', () => {
+  it('Should have a class of loading/loader if imageTotal does not match photos total', () => {
     const expected = 1;
 
     renderedGetPhotosButton.instance().handleClick(photos);
