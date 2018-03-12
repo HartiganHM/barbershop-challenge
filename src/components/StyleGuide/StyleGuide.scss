@@ -5,6 +5,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .home-link {
+    @include buttonDefaultAlternate;
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    margin: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    .home-icon {
+      width: 16px;
+      margin: 0.5rem;
+      fill: $white-transparent;
+      transition: 0.2s;
+    }
+    &:hover {
+      @include buttonHover;
+      .home-icon {
+        fill: #fff;
+        transform: rotate(-90deg);
+      }
+    }
+    &:active {
+      @include buttonActive;
+    }
+  }
   .page-title {
     color: $blue-midtone;
     font-size: 3.2rem;

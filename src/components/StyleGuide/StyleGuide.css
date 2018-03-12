@@ -5,6 +5,41 @@
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .StyleGuide .home-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #2F80ED;
+    font-size: 1.6rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #2F80ED;
+    color: #fff;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    margin: 2rem;
+    cursor: pointer;
+    text-decoration: none; }
+    .StyleGuide .home-link .home-icon {
+      width: 16px;
+      margin: 0.5rem;
+      fill: rgba(255, 255, 255, 0.7);
+      transition: 0.2s; }
+    .StyleGuide .home-link:hover {
+      background-color: #33ADFF;
+      color: #fff; }
+      .StyleGuide .home-link:hover .home-icon {
+        fill: #fff;
+        transform: rotate(-90deg); }
+    .StyleGuide .home-link:active {
+      background-color: #3F67D4;
+      color: #fff; }
   .StyleGuide .page-title {
     color: #2F80ED;
     font-size: 3.2rem;

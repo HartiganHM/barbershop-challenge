@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import iconData from '../../data/iconData';
 import './StyleGuide.css';
@@ -59,6 +60,13 @@ const StyleGuide = () => {
 
   return (
     <div className="StyleGuide">
+      <Link to="/" className="home-link">
+        <svg viewBox="0 0 612 612" className="home-icon">
+          <path d={iconData.home} />
+        </svg>
+        <span className="home-text">Home</span>
+      </Link>
+
       <h2 className="page-title">Barbershop Challenge Style Guide</h2>
 
       <div>{renderedButtons}</div>
