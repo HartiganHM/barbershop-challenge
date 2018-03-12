@@ -22,5 +22,11 @@ describe('mapStateToProps tests', () => {
 });
 
 describe('mapDispatchToProps tests', () => {
+  it('Should call dispatch when populatePhotos is called', () => {
+    const mockDispatch = jest.fn();
+    const result = mapDispatchToProps(mockDispatch);
 
+    result.populatePhotos();
+    expect(mockDispatch).toHaveBeenCalled();
+  });
 });
