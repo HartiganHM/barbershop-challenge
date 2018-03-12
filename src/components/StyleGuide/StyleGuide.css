@@ -4,8 +4,11 @@
   align-self: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 30rem; }
+  align-items: center; }
+  .StyleGuide .page-title {
+    color: #2F80ED;
+    font-size: 3.2rem;
+    text-align: center; }
   .StyleGuide .button-wrapper {
     display: flex;
     justify-content: space-between; }
@@ -64,7 +67,7 @@
           border: 3px solid #fff;
           border-color: #fff transparent transparent transparent; }
       .StyleGuide .button-wrapper .button.text-icon:hover .plus-icon {
-        fill: #FFF;
+        fill: #fff;
         transform: rotate(-90deg); }
       .StyleGuide .button-wrapper .button.hover-focus {
         background-color: #33ADFF;
@@ -93,8 +96,8 @@
       font-size: 1.6rem; }
 
 @media screen and (max-width: 620px) {
+  .StyleGuide .page-title {
+    font-size: 24px;
+    width: 30rem; }
   .StyleGuide .button-wrapper {
-    flex-direction: column; }
-    .StyleGuide .button-wrapper .button-text {
-      order: -1;
-      text-decoration: underline; } }
+    flex-direction: column; } }

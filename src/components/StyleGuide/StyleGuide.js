@@ -59,7 +59,7 @@ const StyleGuide = () => {
 
   return (
     <div className="StyleGuide">
-      <h1>Soi una StyleGuide</h1>
+      <h2 className="page-title">Barbershop Challenge Style Guide</h2>
 
       <div>{renderedButtons}</div>
     </div>
