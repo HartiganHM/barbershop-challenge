@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import iconData from '../../data/iconData';
+import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import './GetPhotosButton.css';
@@ -36,10 +37,16 @@ class GetPhotosButton extends Component {
         : 'GetPhotosButton loading';
 
     const enabledButton = [
-      <svg viewBox="0 0 13.33 13.33" className="plus-icon">
+      <svg
+        key={generateUniqueKey()}
+        viewBox="0 0 13.33 13.33"
+        className="plus-icon"
+      >
         <path d={iconData.getPhotos} />
       </svg>,
-      <span className="get-photos-text">Get Photos</span>
+      <span key={generateUniqueKey()} className="get-photos-text">
+        Get Photos
+      </span>
     ];
 
     const loader = (
