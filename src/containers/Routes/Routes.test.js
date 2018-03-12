@@ -8,7 +8,13 @@ jest.mock('../../helpers/generateUniqueKey/generateUniqueKey.js', () => {
 });
 
 describe('Routes tests', () => {
+  it('Should match the snapshot', () => {
+    const renderedRoutes = shallow(
+      <Routes photos={[mockPhoto]} populatePhotos={jest.fn()} />
+    );
 
+    expect(renderedRoutes).toMatchSnapshot();
+  });
 });
 
 describe('mapStateToProps tests', () => {
