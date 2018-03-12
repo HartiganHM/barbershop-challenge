@@ -19,7 +19,7 @@ class Details extends Component {
     this.setState({ loaded });
   }
 
-  render(props) {
+  render() {
     window.scrollTo(0, 0);
 
     const { selectedPhoto } = this.props;
