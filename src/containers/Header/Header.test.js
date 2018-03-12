@@ -15,11 +15,17 @@ describe('mapStateToProps tests', () => {
     const currentView = 'List';
     const mockStore = { currentView };
     const result = mapStateToProps(mockStore);
-  
+
     expect(result.currentView).toEqual(mockStore.currentView);
   });
 });
 
 describe('mapDispatchToProps tests', () => {
+  it('Should call disaptch when changePhotosView is called', () => {
+    const mockDispatch = jest.fn();
+    const result = mapDispatchToProps(mockDispatch);
 
+    result.changePhotosView();
+    expect(mockDispatch).toHaveBeenCalled();
+  });
 });
