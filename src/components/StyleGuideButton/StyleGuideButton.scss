@@ -6,12 +6,13 @@
   display: flex;
   justify-content: center;
   width: 18rem;
-  margin: 2rem 3rem;
+  margin: 2rem;
   cursor: pointer;
   text-decoration: none;
   .style-icon {
     width: 16px;
     margin: 0.5rem;
+    margin-right: 1.5rem;
     fill: $white-transparent;
     transition: 0.2s;
   }
