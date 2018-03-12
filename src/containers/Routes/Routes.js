@@ -7,6 +7,7 @@ import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
 import GetPhotosButton from '../GetPhotosButton/GetPhotosButton';
 import StyleGuide from '../../components/StyleGuide/StyleGuide';
+import StyleGuideButton from '../../components/StyleGuideButton/StyleGuideButton';
 import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 
@@ -25,7 +26,8 @@ export class Routes extends Component {
         render={() => [
           <Header key={generateUniqueKey()} />,
           <PhotoContainer key={generateUniqueKey()} />,
-          <GetPhotosButton key={generateUniqueKey()} />
+          <GetPhotosButton key={generateUniqueKey()} />,
+          <StyleGuideButton key={generateUniqueKey()} />
         ]}
       />,
 
