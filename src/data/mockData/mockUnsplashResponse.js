@@ -1,3 +1,5 @@
+/*eslint-disable max-len*/
+
 import mockPhoto from './mockPhoto';
 
 const mockUnsplashResponse = {

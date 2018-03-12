@@ -1,4 +1,5 @@
 /*eslint-disable camelcase*/
+/*eslint-disable max-len*/
 
 const mockPhoto = {
   categories: [],
