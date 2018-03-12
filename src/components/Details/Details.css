@@ -11,7 +11,7 @@
   .Details .close-icon {
     align-self: flex-end;
     width: 1.7rem;
-    margin: 2rem;
+    margin: 2rem 0;
     fill: #2F80ED;
     transition: 0.2s;
     cursor: pointer; }
@@ -91,12 +91,8 @@
       fill: #BDBDBD; }
 
 @media screen and (max-width: 1260px) {
-  .Details .close-icon {
-    margin: 0 2rem 2rem; }
   .Details .wrapper .selected-image {
-    width: 560px; }
-  .Details .location-wrapper {
-    margin: 2rem 2rem 0; } }
+    width: 560px; } }
 
 @media screen and (max-width: 620px) {
   .Details .wrapper .selected-image {

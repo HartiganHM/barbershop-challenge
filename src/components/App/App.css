@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .App {
+  display: flex;
+  flex-direction: column;
   width: 124rem;
   margin: 0 auto; }
 
 @media screen and (max-width: 1260px) {
   .App {
-    width: 600px;
-    margin: 20px auto; } }
+    width: 600px; } }
 
 @media screen and (max-width: 620px) {
   .App {

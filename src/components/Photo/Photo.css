@@ -11,6 +11,8 @@
   text-decoration: none; }
   .Photo .list-image {
     width: 24rem; }
+  .Photo .grid-image {
+    width: 40rem; }
   .Photo .photo-details-link {
     margin: 0 4rem;
     color: #2F80ED;

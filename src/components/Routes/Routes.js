@@ -5,32 +5,56 @@ import { PropTypes } from 'prop-types';
 import Details from '../Details/Details';
 import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
+import GetPhotosButton from '../GetPhotosButton/GetPhotosButton';
 import StyleGuide from '../StyleGuide/StyleGuide';
+import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 
 class Routes extends Component {
   componentDidMount() {
-    this.props.populatePhotos();
+    const { photos, populatePhotos } = this.props;
+
+    populatePhotos(photos.length);
   }
 
   render() {
-    return (
-      <div>
-        <Route exact path="/" component={Header} />
-        <Route exact path="/" component={PhotoContainer} />
-        <Route path="/details/:photoId" component={Details} />
-        <Route exact path="/styleguide" component={StyleGuide} />
-      </div>
-    );
+    return [
+      <Route
+        key={generateUniqueKey()}
+        exact
+        path="/"
+        render={() => [
+          <Header key={generateUniqueKey()} />,
+          <PhotoContainer key={generateUniqueKey()} />,
+          <GetPhotosButton key={generateUniqueKey()} />
+        ]}
+      />,
+      <Route
+        key={generateUniqueKey()}
+        path="/details/:photoId"
+        component={Details}
+      />,
+      <Route
+        key={generateUniqueKey()}
+        exact
+        path="/styleguide"
+        component={StyleGuide}
+      />
+    ];
   }
 }
+
+const mapStateToProps = store => ({
+  photos: store.photos
+});
 
 const mapDispatchToProps = dispatch => ({
   populatePhotos: () => dispatch(actions.populatePhotos())
 });
 
-export default connect(null, mapDispatchToProps)(Routes);
+export default connect(mapStateToProps, mapDispatchToProps)(Routes);
 
 Routes.propTypes = {
+  photos: PropTypes.array,
   populatePhotos: PropTypes.func
 };

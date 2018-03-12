@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem; }
+  margin: 2rem 0; }
   .Header .header-title {
     margin: 0;
     font-size: 3.2rem; }
@@ -42,7 +42,8 @@
           fill: #fff; }
       .Header .button-wrapper .view-button:disabled {
         background-color: #8EB7ED;
-        color: #fff; }
+        color: #fff;
+        pointer-events: none; }
         .Header .button-wrapper .view-button:disabled .view-icon {
           fill: #fff; }
       .Header .button-wrapper .view-button.selected {
@@ -60,6 +61,10 @@
         background-color: #2F80ED;
         color: #fff;
         cursor: default; }
+
+@media screen and (max-width: 1260px) {
+  .Header {
+    margin: 2rem; } }
 
 @media screen and (max-width: 620px) {
   .Header .header-title {
