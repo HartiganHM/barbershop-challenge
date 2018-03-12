@@ -6,7 +6,7 @@ import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import './Header.css';
 
-const Header = props => {
+export const Header = props => {
   const { currentView, changePhotosView } = props;
 
   const buttons = ['Grid', 'List'];
@@ -44,11 +44,11 @@ const Header = props => {
   );
 };
 
-const mapStateToProps = store => ({
+export const mapStateToProps = store => ({
   currentView: store.currentView
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   changePhotosView: selectedView =>
     dispatch(actions.changePhotosView(selectedView))
 });

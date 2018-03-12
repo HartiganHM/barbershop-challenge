@@ -6,7 +6,7 @@ import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import './GetPhotosButton.css';
 
-class GetPhotosButton extends Component {
+export class GetPhotosButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -67,11 +67,11 @@ class GetPhotosButton extends Component {
   }
 }
 
-const mapStateToProps = store => ({
+export const mapStateToProps = store => ({
   photos: store.photos
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   getMorePhotos: currentPhotoLength =>
     dispatch(actions.getMorePhotos(currentPhotoLength))
 });

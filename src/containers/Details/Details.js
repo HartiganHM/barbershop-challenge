@@ -6,7 +6,7 @@ import iconData from '../../data/iconData';
 import PropTypes from 'prop-types';
 import './Details.css';
 
-class Details extends Component {
+export class Details extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -110,7 +110,7 @@ class Details extends Component {
   }
 }
 
-const mapStateToProps = store => ({
+export const mapStateToProps = store => ({
   selectedPhoto: store.selectedPhoto
 });
 
