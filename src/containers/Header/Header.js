@@ -11,18 +11,17 @@ const Header = props => {
   const buttons = ['Grid', 'List'];
 
   const renderButtons = buttons.map((button, index) => {
-    const currentClass =
-      currentView === button ? 'view-button selected' : 'view-button';
-    const iconClass =
-      currentView === button ? 'view-icon selected' : 'view-icon';
+    const checkSelected = (currentClass) => {
+      return currentView === button ? currentClass + ' selected' : currentClass;
+    }
 
     return (
       <a
         key={index}
-        className={currentClass}
+        className={checkSelected('view-button')}
         onClick={() => changePhotosView(button)}
       >
-        <svg className={iconClass} width="13" height="10" viewBox="0 0 13 10">
+        <svg className={checkSelected('view-icon')} width="13" height="10" viewBox="0 0 13 10">
           <path d={iconData[button]} />
         </svg>
         {button}
