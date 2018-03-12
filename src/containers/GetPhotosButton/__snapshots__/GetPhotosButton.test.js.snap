@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GetPhotosButton tests Should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GetPhotosButton
+    getMorePhotos={[MockFunction]}
+    photos={
+      Array [
+        Object {
+          "categories": Array [],
+          "color": "#DF8A65",
+          "created_at": "2017-07-20T02:21:08-04:00",
+          "current_user_collections": Array [],
+          "description": "A highway road through rocky cliffs at Valley of Fire State Park",
+          "height": 5472,
+          "id": "tMzCrBkM99Y",
+          "liked_by_user": false,
+          "likes": 2306,
+          "links": Object {
+            "download": "https://unsplash.com/photos/tMzCrBkM99Y/download",
+            "download_location": "https://api.unsplash.com/photos/tMzCrBkM99Y/download",
+            "html": "https://unsplash.com/photos/tMzCrBkM99Y",
+            "self": "https://api.unsplash.com/photos/tMzCrBkM99Y",
+          },
+          "sponsored": false,
+          "updated_at": "2017-11-01T15:04:31-04:00",
+          "urls": Object {
+            "full": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjIyNDUyfQ&s=b09cf725577ce730f9f8323a6a17037d",
+            "raw": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIyNDUyfQ&s=8da1e8ea486b7798563909d68f9f0978",
+            "regular": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIyNDUyfQ&s=b29adb2b9778dbc6782f49370e3e3bcf",
+            "small": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjIyNDUyfQ&s=bb51a2166a2929a330177532df56bd95",
+            "thumb": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjIyNDUyfQ&s=e713f9e40adacbd68dac2789f33daecd",
+          },
+          "user": Object {
+            "bio": "Top 100 Most Downloaded Photos of the Year 2017 |
+    Editor’s Choice Top 100 Photos of the Year 2017 |
+    Follow my adventures on Instagram: @jakeblucker",
+            "first_name": "Jake",
+            "id": "Ev2n9fB9hXc",
+            "instagram_username": "jakeblucker",
+            "last_name": "Blucker",
+            "links": Object {
+              "followers": "https://api.unsplash.com/users/jakeblucker/followers",
+              "following": "https://api.unsplash.com/users/jakeblucker/following",
+              "html": "https://unsplash.com/@jakeblucker",
+              "likes": "https://api.unsplash.com/users/jakeblucker/likes",
+              "photos": "https://api.unsplash.com/users/jakeblucker/photos",
+              "portfolio": "https://api.unsplash.com/users/jakeblucker/portfolio",
+              "self": "https://api.unsplash.com/users/jakeblucker",
+            },
+            "location": null,
+            "name": "Jake Blicker",
+            "portfolio_url": null,
+            "profile_image": Object {
+              "large": "https://images.unsplash.com/profile-1516312729390-1fb554b25f8b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=ead1dab7076e5e3eea6b696f2fc25580",
+              "medium": "https://images.unsplash.com/profile-1516312729390-1fb554b25f8b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=c354801257e2365fda630ae3fea7a155",
+              "small": "https://images.unsplash.com/profile-1516312729390-1fb554b25f8b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=f4f2a9a39c5fa6e03de2ee43829b4dda",
+            },
+            "total_collections": 0,
+            "total_likes": 33,
+            "total_photos": 11,
+            "twitter_username": "JakeBlucker",
+            "updated_at": "2018-03-11T03:35:48-04:00",
+            "username": "jakeblucker",
+          },
+          "width": 3648,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <svg
+          className="plus-icon"
+          viewBox="0 0 13.33 13.33"
+        >
+          <path
+            d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+          />
+        </svg>,
+        <span
+          className="get-photos-text"
+        >
+          Get Photos
+        </span>,
+      ],
+      "className": "GetPhotosButton",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": <path
+            d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+          />,
+          "className": "plus-icon",
+          "viewBox": "0 0 13.33 13.33",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "d": "M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "path",
+        },
+        "type": "svg",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Get Photos",
+          "className": "get-photos-text",
+        },
+        "ref": null,
+        "rendered": "Get Photos",
+        "type": "span",
+      },
+    ],
+    "type": "a",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <svg
+            className="plus-icon"
+            viewBox="0 0 13.33 13.33"
+          >
+            <path
+              d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+            />
+          </svg>,
+          <span
+            className="get-photos-text"
+          >
+            Get Photos
+          </span>,
+        ],
+        "className": "GetPhotosButton",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <path
+              d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+            />,
+            "className": "plus-icon",
+            "viewBox": "0 0 13.33 13.33",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "d": "M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "path",
+          },
+          "type": "svg",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Get Photos",
+            "className": "get-photos-text",
+          },
+          "ref": null,
+          "rendered": "Get Photos",
+          "type": "span",
+        },
+      ],
+      "type": "a",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
