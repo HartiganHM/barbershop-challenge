@@ -21,15 +21,31 @@ describe('Header tests', () => {
   });
 
   it('Should match the snapshot', () => {
-
+    expect(renderedHeader).toMatchSnapshot();
   });
 
-  it('Should have one selected class based on currentView', () => {
+  it('Should have a selected class based on currentView', () => {
+    const expectedLength = 1;
+    const expectedText = 'List';
+    const selectedButton = renderedHeader.findWhere(element =>
+      element.hasClass('view-button selected')
+    );
 
+    expect(selectedButton.length).toEqual(expectedLength);
+    expect(selectedButton.text()).toEqual(expectedText);
   });
 
   it('Should change selected class if currentView is changed', () => {
+    renderedHeader = shallow(<Header currentView={'Grid'} />);
 
+    const expectedLength = 1;
+    const expectedText = 'Grid';
+    const selectedButton = renderedHeader.findWhere(element =>
+      element.hasClass('view-button selected')
+    );
+
+    expect(selectedButton.length).toEqual(expectedLength);
+    expect(selectedButton.text()).toEqual(expectedText);
   });
 });
 
