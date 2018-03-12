@@ -23,18 +23,19 @@ class Details extends Component {
     window.scrollTo(0, 0);
 
     const { selectedPhoto } = this.props;
+    const { urls, user } = selectedPhoto;
     const { goBack } = this.props.history;
     const { loaded } = this.state;
 
-    const fullImage = selectedPhoto.urls.full;
-    const regularImage = selectedPhoto.urls.regular;
+    const fullImage = urls.full;
+    const regularImage = urls.regular;
 
     const imageAlt = selectedPhoto.description;
-    const userFullName = selectedPhoto.user.name;
-    const userImage = selectedPhoto.user.profile_image.large;
-    const userUsername = '@' + selectedPhoto.user.username;
-    const userProfile = selectedPhoto.user.links.html;
-    const userLocation = selectedPhoto.user.location;
+    const userFullName = user.name;
+    const userImage = user.profile_image.large;
+    const userUsername = '@' + user.username;
+    const userProfile = user.links.html;
+    const userLocation = user.location;
 
     const loader = (
       <div className="loader">
