@@ -7,7 +7,30 @@ jest.mock('../../helpers/generateUniqueKey/generateUniqueKey.js', () => {
 });
 
 describe('Header tests', () => {
+  let currentView;
+  let changePhotosView;
+  let renderedHeader;
 
+  beforeEach(() => {
+    currentView = 'List';
+    changePhotosView = jest.fn();
+
+    renderedHeader = shallow(
+      <Header currentView={currentView} changePhotosView={changePhotosView} />
+    );
+  });
+
+  it('Should match the snapshot', () => {
+
+  });
+
+  it('Should have one selected class based on currentView', () => {
+
+  });
+
+  it('Should change selected class if currentView is changed', () => {
+
+  });
 });
 
 describe('mapStateToProps tests', () => {
