@@ -10,7 +10,7 @@ const getPhotos = async currentPhotoLength => {
 
     return jsonPhotos;
   } catch (error) {
-    throw Error(`Error retrieving photos from Unsplash: ${error}`);
+    throw new Error(`Error retrieving photos from Unsplash: ${error}`);
   }
 };
 
