@@ -5,11 +5,11 @@ import './StyleGuideButton.css';
 
 const StyleGuideButton = () => {
   return (
-    <Link to="/styleguide">
+    <Link to="/styleguide" className="StyleGuideButton">
       <svg viewBox="0 0 19.3 19.3" className="style-icon">
         <path d={iconData.style} />
       </svg>
-      <span className="home-text">Style</span>
+      <span className="home-text">Style Guide</span>
     </Link>
   );
 };

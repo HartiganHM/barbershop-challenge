@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.StyleGuideButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 4rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #2F80ED;
+  font-size: 1.6rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #2F80ED;
+  color: #fff;
+  cursor: default;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 18rem;
+  margin: 2rem 3rem;
+  cursor: pointer;
+  text-decoration: none; }
+  .StyleGuideButton .style-icon {
+    width: 16px;
+    margin: 0.5rem;
+    fill: rgba(255, 255, 255, 0.7);
+    transition: 0.2s; }
+  .StyleGuideButton:hover {
+    background-color: #33ADFF;
+    color: #fff; }
+    .StyleGuideButton:hover .style-icon {
+      fill: #fff;
+      transform: rotate(-90deg); }
+  .StyleGuideButton:active {
+    background-color: #3F67D4;
+    color: #fff; }
