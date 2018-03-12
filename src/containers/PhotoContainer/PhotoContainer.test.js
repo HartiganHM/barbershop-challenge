@@ -8,7 +8,30 @@ jest.mock('../../helpers/generateUniqueKey/generateUniqueKey.js', () => {
 });
 
 describe('PhotoContainer tests', () => {
+  let photos;
+  let currentView;
+  let renderedPhotoContainer;
 
+  beforeEach(() => {
+    photos = [mockPhoto];
+    currentView = 'List';
+
+    renderedPhotoContainer = shallow(
+      <PhotoContainer photos={photos} currentView={currentView} />
+    );
+  });
+
+  it('Should match the snapshot', () => {
+
+  });
+
+  it('Should have a class matching the currentView', () => {
+
+  });
+
+  it('Should change class if currentView changes', () => {
+
+  });
 });
 
 describe('mapStateToProps tests', () => {
