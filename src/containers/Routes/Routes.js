@@ -6,7 +6,7 @@ import Details from '../Details/Details';
 import Header from '../Header/Header';
 import PhotoContainer from '../PhotoContainer/PhotoContainer';
 import GetPhotosButton from '../GetPhotosButton/GetPhotosButton';
-import StyleGuide from '../StyleGuide/StyleGuide';
+import StyleGuide from '../../components/StyleGuide/StyleGuide';
 import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 
