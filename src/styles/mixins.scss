@@ -35,6 +35,7 @@
 @mixin buttonDisabled() {
   background-color: $lightblue;
   color: #fff;
+  pointer-events: none;
 }
 
 // Animations
