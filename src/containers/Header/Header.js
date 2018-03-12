@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import iconData from '../../data/iconData';
+import generateUniqueKey from '../../helpers/generateUniqueKey/generateUniqueKey';
 import * as actions from '../../actions';
 import PropTypes from 'prop-types';
 import './Header.css';
@@ -10,18 +11,23 @@ const Header = props => {
 
   const buttons = ['Grid', 'List'];
 
-  const renderButtons = buttons.map((button, index) => {
-    const checkSelected = (currentClass) => {
+  const renderButtons = buttons.map(button => {
+    const checkSelected = currentClass => {
       return currentView === button ? currentClass + ' selected' : currentClass;
-    }
+    };
 
     return (
       <a
-        key={index}
+        key={generateUniqueKey()}
         className={checkSelected('view-button')}
         onClick={() => changePhotosView(button)}
       >
-        <svg className={checkSelected('view-icon')} width="13" height="10" viewBox="0 0 13 10">
+        <svg
+          className={checkSelected('view-icon')}
+          width="13"
+          height="10"
+          viewBox="0 0 13 10"
+        >
           <path d={iconData[button]} />
         </svg>
         {button}
