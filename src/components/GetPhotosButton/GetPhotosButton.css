@@ -26,6 +26,34 @@
     margin: 0.5rem;
     fill: rgba(255, 255, 255, 0.7);
     transition: 0.2s; }
+  .GetPhotosButton .loader {
+    align-self: center;
+    display: inline-block;
+    position: relative;
+    width: 2.6rem;
+    height: 2.6rem; }
+    .GetPhotosButton .loader div {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: 2.6rem;
+      height: 2.6rem;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: #fff transparent transparent transparent; }
+    .GetPhotosButton .loader div:nth-child(1) {
+      animation-delay: -0.45s; }
+    .GetPhotosButton .loader div:nth-child(2) {
+      animation-delay: -0.3s; }
+    .GetPhotosButton .loader div:nth-child(3) {
+      animation-delay: -0.15s; }
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
   .GetPhotosButton .get-photos-text {
     margin: 0.5rem; }
   .GetPhotosButton:hover {
@@ -37,3 +65,7 @@
   .GetPhotosButton:active {
     background-color: #3F67D4;
     color: #fff; }
+  .GetPhotosButton.loading {
+    background-color: #8EB7ED;
+    color: #fff;
+    pointer-events: none; }

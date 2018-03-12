@@ -15,6 +15,10 @@
     fill: $white-transparent;
     transition: 0.2s;
   }
+  .loader {
+    align-self: center;
+    @include buttonLoader;
+  }
   .get-photos-text {
     margin: 0.5rem;
   }
@@ -27,5 +31,8 @@
   }
   &:active {
     @include buttonActive;
+  }
+  &.loading {
+    @include buttonDisabled;
   }
 }
