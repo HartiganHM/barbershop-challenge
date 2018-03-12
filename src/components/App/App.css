@@ -14,4 +14,6 @@
 
 @media screen and (max-width: 620px) {
   .App {
-    width: 375px; } }
+    width: 375px; }
+    .App .footer-button-wrapper {
+      flex-direction: column; } }
