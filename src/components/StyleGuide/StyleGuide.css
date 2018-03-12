@@ -87,5 +87,14 @@
       justify-content: center;
       align-items: center;
       width: 18rem;
+      margin: 1.35rem;
+      padding: 0.5rem;
       color: #696969;
       font-size: 1.6rem; }
+
+@media screen and (max-width: 620px) {
+  .StyleGuide .button-wrapper {
+    flex-direction: column; }
+    .StyleGuide .button-wrapper .button-text {
+      order: -1;
+      text-decoration: underline; } }
