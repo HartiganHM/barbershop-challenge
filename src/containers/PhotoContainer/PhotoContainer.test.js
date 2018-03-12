@@ -22,15 +22,29 @@ describe('PhotoContainer tests', () => {
   });
 
   it('Should match the snapshot', () => {
-
+    expect(renderedPhotoContainer).toMatchSnapshot();
   });
 
   it('Should have a class matching the currentView', () => {
+    const expectedClass = '.' + currentView;
+    const expectedLength = 1;
 
+    expect(renderedPhotoContainer.find(expectedClass).length).toEqual(
+      expectedLength
+    );
   });
 
   it('Should change class if currentView changes', () => {
+    const expected = 1;
 
+    expect(renderedPhotoContainer.find('.List').length).toEqual(1);
+
+    renderedPhotoContainer = shallow(
+      <PhotoContainer photos={photos} currentView={'Grid'} />
+    );
+
+    expect(renderedPhotoContainer.find('.List').length).toEqual(0);
+    expect(renderedPhotoContainer.find('.Grid').length).toEqual(expected);
   });
 });
 
