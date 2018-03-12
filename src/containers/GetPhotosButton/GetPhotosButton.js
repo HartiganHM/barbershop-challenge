@@ -31,6 +31,7 @@ class GetPhotosButton extends Component {
   render() {
     const { imageTotal } = this.state;
     const { photos } = this.props;
+
     const currentClass =
       imageTotal === photos.length
         ? 'GetPhotosButton'
