@@ -31,9 +31,8 @@ export const Header = props => {
           >
             <path d={iconData[button]} />
           </svg>
+          <input className="view-button-text" type="submit" value={button} />
         </a>
-
-        <input className="view-button-text" type="submit" value={button} />
       </button>
     );
   });
