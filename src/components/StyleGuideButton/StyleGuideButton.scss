@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.StyleGuideButton {
+  @include buttonDefaultAlternate;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 18rem;
+  margin: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  .style-icon {
+    width: 16px;
+    margin: 0.5rem;
+    fill: $white-transparent;
+    transition: 0.2s;
+  }
+  .style-text {
+    margin-left: 1rem;
+  }
+  &:hover {
+    @include buttonHover;
+    .style-icon {
+      fill: #fff;
+      transform: rotate(-90deg);
+    }
+  }
+  &:active {
+    @include buttonActive;
+  }
+}

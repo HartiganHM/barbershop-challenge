@@ -17,23 +17,913 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        Soi una StyleGuide
-      </h1>,
+      "children": Array [
+        <Link
+          className="home-link"
+          replace={false}
+          to="/"
+        >
+          <svg
+            className="home-icon"
+            viewBox="0 0 612 612"
+          >
+            <path
+              d="M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z"
+            />
+          </svg>
+          <span
+            className="home-text"
+          >
+            Home
+          </span>
+        </Link>,
+        <h2
+          className="page-title"
+        >
+          Barbershop Challenge Style Guide
+        </h2>,
+        <div>
+          <span
+            className="button-wrapper"
+          >
+            <a
+              className="button text-icon"
+            >
+              <svg
+                className="plus-icon"
+                viewBox="0 0 13.33 13.33"
+              >
+                <path
+                  d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                />
+              </svg>
+              <span
+                className="get-photos-text"
+              >
+                Click Me
+              </span>
+            </a>
+            <h4
+              className="button-text"
+            >
+              Text + Icon
+            </h4>
+          </span>
+          <span
+            className="button-wrapper"
+          >
+            <a
+              className="button text"
+            >
+              <span
+                className="get-photos-text"
+              >
+                Click Me
+              </span>
+            </a>
+            <h4
+              className="button-text"
+            >
+              Text
+            </h4>
+          </span>
+          <span
+            className="button-wrapper"
+          >
+            <a
+              className="button hover-focus"
+            >
+              <span
+                className="get-photos-text"
+              >
+                Click Me
+              </span>
+            </a>
+            <h4
+              className="button-text"
+            >
+              Hover / Focus
+            </h4>
+          </span>
+          <span
+            className="button-wrapper"
+          >
+            <a
+              className="button active"
+            >
+              <span
+                className="get-photos-text"
+              >
+                Click Me
+              </span>
+            </a>
+            <h4
+              className="button-text"
+            >
+              Active
+            </h4>
+          </span>
+          <span
+            className="button-wrapper"
+          >
+            <a
+              className="button disabled"
+            >
+              <span
+                className="get-photos-text"
+              >
+                Click Me
+              </span>
+            </a>
+            <h4
+              className="button-text"
+            >
+              Disabled
+            </h4>
+          </span>
+          <span
+            className="button-wrapper"
+          >
+            <a
+              className="button loader"
+            >
+              <div
+                className="loading-icon"
+              >
+                <div />
+                <div />
+                <div />
+                <div />
+              </div>
+            </a>
+            <h4
+              className="button-text"
+            >
+              Loader
+            </h4>
+          </span>
+        </div>,
+      ],
       "className": "StyleGuide",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Soi una StyleGuide",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <svg
+              className="home-icon"
+              viewBox="0 0 612 612"
+            >
+              <path
+                d="M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z"
+              />
+            </svg>,
+            <span
+              className="home-text"
+            >
+              Home
+            </span>,
+          ],
+          "className": "home-link",
+          "replace": false,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <path
+                d="M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z"
+              />,
+              "className": "home-icon",
+              "viewBox": "0 0 612 612",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "d": "M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "path",
+            },
+            "type": "svg",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Home",
+              "className": "home-text",
+            },
+            "ref": null,
+            "rendered": "Home",
+            "type": "span",
+          },
+        ],
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": "Soi una StyleGuide",
-      "type": "h1",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Barbershop Challenge Style Guide",
+          "className": "page-title",
+        },
+        "ref": null,
+        "rendered": "Barbershop Challenge Style Guide",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button text-icon"
+              >
+                <svg
+                  className="plus-icon"
+                  viewBox="0 0 13.33 13.33"
+                >
+                  <path
+                    d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                  />
+                </svg>
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Text + Icon
+              </h4>
+            </span>,
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button text"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Text
+              </h4>
+            </span>,
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button hover-focus"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Hover / Focus
+              </h4>
+            </span>,
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button active"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Active
+              </h4>
+            </span>,
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button disabled"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Disabled
+              </h4>
+            </span>,
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button loader"
+              >
+                <div
+                  className="loading-icon"
+                >
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                </div>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Loader
+              </h4>
+            </span>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  className="button text-icon"
+                >
+                  <svg
+                    className="plus-icon"
+                    viewBox="0 0 13.33 13.33"
+                  >
+                    <path
+                      d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                    />
+                  </svg>
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>,
+                <h4
+                  className="button-text"
+                >
+                  Text + Icon
+                </h4>,
+              ],
+              "className": "button-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <svg
+                      className="plus-icon"
+                      viewBox="0 0 13.33 13.33"
+                    >
+                      <path
+                        d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                      />
+                    </svg>,
+                    false,
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>,
+                  ],
+                  "className": "button text-icon",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "1",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <path
+                        d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                      />,
+                      "className": "plus-icon",
+                      "viewBox": "0 0 13.33 13.33",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    "type": "svg",
+                  },
+                  false,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Click Me",
+                      "className": "get-photos-text",
+                    },
+                    "ref": null,
+                    "rendered": "Click Me",
+                    "type": "span",
+                  },
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Text + Icon",
+                  "className": "button-text",
+                },
+                "ref": null,
+                "rendered": "Text + Icon",
+                "type": "h4",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  className="button text"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>,
+                <h4
+                  className="button-text"
+                >
+                  Text
+                </h4>,
+              ],
+              "className": "button-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    false,
+                    false,
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>,
+                  ],
+                  "className": "button text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  false,
+                  false,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Click Me",
+                      "className": "get-photos-text",
+                    },
+                    "ref": null,
+                    "rendered": "Click Me",
+                    "type": "span",
+                  },
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Text",
+                  "className": "button-text",
+                },
+                "ref": null,
+                "rendered": "Text",
+                "type": "h4",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  className="button hover-focus"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>,
+                <h4
+                  className="button-text"
+                >
+                  Hover / Focus
+                </h4>,
+              ],
+              "className": "button-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    false,
+                    false,
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>,
+                  ],
+                  "className": "button hover-focus",
+                },
+                "ref": null,
+                "rendered": Array [
+                  false,
+                  false,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Click Me",
+                      "className": "get-photos-text",
+                    },
+                    "ref": null,
+                    "rendered": "Click Me",
+                    "type": "span",
+                  },
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Hover / Focus",
+                  "className": "button-text",
+                },
+                "ref": null,
+                "rendered": "Hover / Focus",
+                "type": "h4",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  className="button active"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>,
+                <h4
+                  className="button-text"
+                >
+                  Active
+                </h4>,
+              ],
+              "className": "button-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    false,
+                    false,
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>,
+                  ],
+                  "className": "button active",
+                },
+                "ref": null,
+                "rendered": Array [
+                  false,
+                  false,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Click Me",
+                      "className": "get-photos-text",
+                    },
+                    "ref": null,
+                    "rendered": "Click Me",
+                    "type": "span",
+                  },
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Active",
+                  "className": "button-text",
+                },
+                "ref": null,
+                "rendered": "Active",
+                "type": "h4",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  className="button disabled"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>,
+                <h4
+                  className="button-text"
+                >
+                  Disabled
+                </h4>,
+              ],
+              "className": "button-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    false,
+                    false,
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>,
+                  ],
+                  "className": "button disabled",
+                },
+                "ref": null,
+                "rendered": Array [
+                  false,
+                  false,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Click Me",
+                      "className": "get-photos-text",
+                    },
+                    "ref": null,
+                    "rendered": "Click Me",
+                    "type": "span",
+                  },
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Disabled",
+                  "className": "button-text",
+                },
+                "ref": null,
+                "rendered": "Disabled",
+                "type": "h4",
+              },
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  className="button loader"
+                >
+                  <div
+                    className="loading-icon"
+                  >
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                  </div>
+                </a>,
+                <h4
+                  className="button-text"
+                >
+                  Loader
+                </h4>,
+              ],
+              "className": "button-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    false,
+                    <div
+                      className="loading-icon"
+                    >
+                      <div />
+                      <div />
+                      <div />
+                      <div />
+                    </div>,
+                    false,
+                  ],
+                  "className": "button loader",
+                },
+                "ref": null,
+                "rendered": Array [
+                  false,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div />,
+                        <div />,
+                        <div />,
+                        <div />,
+                      ],
+                      "className": "loading-icon",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  false,
+                ],
+                "type": "a",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Loader",
+                  "className": "button-text",
+                },
+                "ref": null,
+                "rendered": "Loader",
+                "type": "h4",
+              },
+            ],
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -42,23 +932,913 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1>
-          Soi una StyleGuide
-        </h1>,
+        "children": Array [
+          <Link
+            className="home-link"
+            replace={false}
+            to="/"
+          >
+            <svg
+              className="home-icon"
+              viewBox="0 0 612 612"
+            >
+              <path
+                d="M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z"
+              />
+            </svg>
+            <span
+              className="home-text"
+            >
+              Home
+            </span>
+          </Link>,
+          <h2
+            className="page-title"
+          >
+            Barbershop Challenge Style Guide
+          </h2>,
+          <div>
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button text-icon"
+              >
+                <svg
+                  className="plus-icon"
+                  viewBox="0 0 13.33 13.33"
+                >
+                  <path
+                    d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                  />
+                </svg>
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Text + Icon
+              </h4>
+            </span>
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button text"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Text
+              </h4>
+            </span>
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button hover-focus"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Hover / Focus
+              </h4>
+            </span>
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button active"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Active
+              </h4>
+            </span>
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button disabled"
+              >
+                <span
+                  className="get-photos-text"
+                >
+                  Click Me
+                </span>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Disabled
+              </h4>
+            </span>
+            <span
+              className="button-wrapper"
+            >
+              <a
+                className="button loader"
+              >
+                <div
+                  className="loading-icon"
+                >
+                  <div />
+                  <div />
+                  <div />
+                  <div />
+                </div>
+              </a>
+              <h4
+                className="button-text"
+              >
+                Loader
+              </h4>
+            </span>
+          </div>,
+        ],
         "className": "StyleGuide",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Soi una StyleGuide",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <svg
+                className="home-icon"
+                viewBox="0 0 612 612"
+              >
+                <path
+                  d="M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z"
+                />
+              </svg>,
+              <span
+                className="home-text"
+              >
+                Home
+              </span>,
+            ],
+            "className": "home-link",
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <path
+                  d="M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z"
+                />,
+                "className": "home-icon",
+                "viewBox": "0 0 612 612",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "d": "M609.2,298.6L313.3,3.8c-4-4-10.4-4-14.4,0L3,298.6c-4,4-3.9,10.4,0,14.4c2,2.1,4.6,3.1,7.2,3.1v0h71.4V601
+    c0,2.8,1.1,5.3,3,7.2c1.8,1.9,4.4,3,7.2,3h142.8c5.6,0,10.2-4.6,10.2-10.2V397.6h122.4V601c0,5.6,4.6,10.2,10.2,10.2h142.8
+    c5.6,0,10.2-4.6,10.2-10.2V316.1h71.9c2.7,0.1,5.2-1,6.9-3.2C612.7,308.5,613.2,302.6,609.2,298.6z",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "path",
+              },
+              "type": "svg",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Home",
+                "className": "home-text",
+              },
+              "ref": null,
+              "rendered": "Home",
+              "type": "span",
+            },
+          ],
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": "Soi una StyleGuide",
-        "type": "h1",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Barbershop Challenge Style Guide",
+            "className": "page-title",
+          },
+          "ref": null,
+          "rendered": "Barbershop Challenge Style Guide",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="button-wrapper"
+              >
+                <a
+                  className="button text-icon"
+                >
+                  <svg
+                    className="plus-icon"
+                    viewBox="0 0 13.33 13.33"
+                  >
+                    <path
+                      d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                    />
+                  </svg>
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>
+                <h4
+                  className="button-text"
+                >
+                  Text + Icon
+                </h4>
+              </span>,
+              <span
+                className="button-wrapper"
+              >
+                <a
+                  className="button text"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>
+                <h4
+                  className="button-text"
+                >
+                  Text
+                </h4>
+              </span>,
+              <span
+                className="button-wrapper"
+              >
+                <a
+                  className="button hover-focus"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>
+                <h4
+                  className="button-text"
+                >
+                  Hover / Focus
+                </h4>
+              </span>,
+              <span
+                className="button-wrapper"
+              >
+                <a
+                  className="button active"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>
+                <h4
+                  className="button-text"
+                >
+                  Active
+                </h4>
+              </span>,
+              <span
+                className="button-wrapper"
+              >
+                <a
+                  className="button disabled"
+                >
+                  <span
+                    className="get-photos-text"
+                  >
+                    Click Me
+                  </span>
+                </a>
+                <h4
+                  className="button-text"
+                >
+                  Disabled
+                </h4>
+              </span>,
+              <span
+                className="button-wrapper"
+              >
+                <a
+                  className="button loader"
+                >
+                  <div
+                    className="loading-icon"
+                  >
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                  </div>
+                </a>
+                <h4
+                  className="button-text"
+                >
+                  Loader
+                </h4>
+              </span>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    className="button text-icon"
+                  >
+                    <svg
+                      className="plus-icon"
+                      viewBox="0 0 13.33 13.33"
+                    >
+                      <path
+                        d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                      />
+                    </svg>
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>
+                  </a>,
+                  <h4
+                    className="button-text"
+                  >
+                    Text + Icon
+                  </h4>,
+                ],
+                "className": "button-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <svg
+                        className="plus-icon"
+                        viewBox="0 0 13.33 13.33"
+                      >
+                        <path
+                          d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                        />
+                      </svg>,
+                      false,
+                      <span
+                        className="get-photos-text"
+                      >
+                        Click Me
+                      </span>,
+                    ],
+                    "className": "button text-icon",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "1",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <path
+                          d="M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z"
+                        />,
+                        "className": "plus-icon",
+                        "viewBox": "0 0 13.33 13.33",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "d": "M 7.3333 3.3335L 5.99997 3.3335L 5.99997 6.00016L 3.3333 6.00016L 3.3333 7.3335L 5.99997 7.3335L 5.99997 10.0002L 7.3333 10.0002L 7.3333 7.3335L 9.99997 7.3335L 9.99997 6.00016L 7.3333 6.00016L 7.3333 3.3335ZM 6.66667 0C 2.98667 0 0 2.98667 0 6.66667C 0 10.3467 2.98667 13.3333 6.66667 13.3333C 10.3467 13.3333 13.3333 10.3467 13.3333 6.66667C 13.3333 2.98667 10.3467 0 6.66667 0ZM 6.66664 12.0002C 3.72663 12.0002 1.3333 9.60683 1.3333 6.66683C 1.3333 3.72683 3.72663 1.3335 6.66664 1.3335C 9.60664 1.3335 12 3.72683 12 6.66683C 12 9.60683 9.60664 12.0002 6.66664 12.0002Z",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "path",
+                      },
+                      "type": "svg",
+                    },
+                    false,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Click Me",
+                        "className": "get-photos-text",
+                      },
+                      "ref": null,
+                      "rendered": "Click Me",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Text + Icon",
+                    "className": "button-text",
+                  },
+                  "ref": null,
+                  "rendered": "Text + Icon",
+                  "type": "h4",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    className="button text"
+                  >
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>
+                  </a>,
+                  <h4
+                    className="button-text"
+                  >
+                    Text
+                  </h4>,
+                ],
+                "className": "button-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      false,
+                      false,
+                      <span
+                        className="get-photos-text"
+                      >
+                        Click Me
+                      </span>,
+                    ],
+                    "className": "button text",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    false,
+                    false,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Click Me",
+                        "className": "get-photos-text",
+                      },
+                      "ref": null,
+                      "rendered": "Click Me",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Text",
+                    "className": "button-text",
+                  },
+                  "ref": null,
+                  "rendered": "Text",
+                  "type": "h4",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    className="button hover-focus"
+                  >
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>
+                  </a>,
+                  <h4
+                    className="button-text"
+                  >
+                    Hover / Focus
+                  </h4>,
+                ],
+                "className": "button-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      false,
+                      false,
+                      <span
+                        className="get-photos-text"
+                      >
+                        Click Me
+                      </span>,
+                    ],
+                    "className": "button hover-focus",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    false,
+                    false,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Click Me",
+                        "className": "get-photos-text",
+                      },
+                      "ref": null,
+                      "rendered": "Click Me",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Hover / Focus",
+                    "className": "button-text",
+                  },
+                  "ref": null,
+                  "rendered": "Hover / Focus",
+                  "type": "h4",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    className="button active"
+                  >
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>
+                  </a>,
+                  <h4
+                    className="button-text"
+                  >
+                    Active
+                  </h4>,
+                ],
+                "className": "button-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      false,
+                      false,
+                      <span
+                        className="get-photos-text"
+                      >
+                        Click Me
+                      </span>,
+                    ],
+                    "className": "button active",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    false,
+                    false,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Click Me",
+                        "className": "get-photos-text",
+                      },
+                      "ref": null,
+                      "rendered": "Click Me",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Active",
+                    "className": "button-text",
+                  },
+                  "ref": null,
+                  "rendered": "Active",
+                  "type": "h4",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    className="button disabled"
+                  >
+                    <span
+                      className="get-photos-text"
+                    >
+                      Click Me
+                    </span>
+                  </a>,
+                  <h4
+                    className="button-text"
+                  >
+                    Disabled
+                  </h4>,
+                ],
+                "className": "button-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      false,
+                      false,
+                      <span
+                        className="get-photos-text"
+                      >
+                        Click Me
+                      </span>,
+                    ],
+                    "className": "button disabled",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    false,
+                    false,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Click Me",
+                        "className": "get-photos-text",
+                      },
+                      "ref": null,
+                      "rendered": "Click Me",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Disabled",
+                    "className": "button-text",
+                  },
+                  "ref": null,
+                  "rendered": "Disabled",
+                  "type": "h4",
+                },
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    className="button loader"
+                  >
+                    <div
+                      className="loading-icon"
+                    >
+                      <div />
+                      <div />
+                      <div />
+                      <div />
+                    </div>
+                  </a>,
+                  <h4
+                    className="button-text"
+                  >
+                    Loader
+                  </h4>,
+                ],
+                "className": "button-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      false,
+                      <div
+                        className="loading-icon"
+                      >
+                        <div />
+                        <div />
+                        <div />
+                        <div />
+                      </div>,
+                      false,
+                    ],
+                    "className": "button loader",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    false,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <div />,
+                          <div />,
+                          <div />,
+                          <div />,
+                        ],
+                        "className": "loading-icon",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    false,
+                  ],
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Loader",
+                    "className": "button-text",
+                  },
+                  "ref": null,
+                  "rendered": "Loader",
+                  "type": "h4",
+                },
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
   ],

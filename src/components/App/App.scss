@@ -4,6 +4,10 @@
   flex-direction: column;
   width: 124rem;
   margin: 0 auto;
+  .footer-button-wrapper {
+    align-self: center;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -15,5 +19,8 @@
 @media screen and (max-width: 620px) {
   .App {
     width: 375px;
+    .footer-button-wrapper {
+      flex-direction: column;
+    }
   }
 }

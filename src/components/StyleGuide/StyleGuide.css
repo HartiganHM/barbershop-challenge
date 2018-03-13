@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.StyleGuide {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .StyleGuide .home-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #2F80ED;
+    font-size: 1.6rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #2F80ED;
+    color: #fff;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    margin: 2rem;
+    cursor: pointer;
+    text-decoration: none; }
+    .StyleGuide .home-link .home-icon {
+      width: 16px;
+      margin: 0.5rem;
+      fill: rgba(255, 255, 255, 0.7);
+      transition: 0.2s; }
+    .StyleGuide .home-link:hover {
+      background-color: #33ADFF;
+      color: #fff; }
+      .StyleGuide .home-link:hover .home-icon {
+        fill: #fff;
+        transform: rotate(-90deg); }
+    .StyleGuide .home-link:active {
+      background-color: #3F67D4;
+      color: #fff; }
+  .StyleGuide .page-title {
+    color: #2F80ED;
+    font-size: 3.2rem;
+    text-align: center; }
+  .StyleGuide .button-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .StyleGuide .button-wrapper .button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 4rem;
+      padding: 0.5rem;
+      border-radius: 2px;
+      background-color: #fff;
+      color: #2F80ED;
+      font-size: 1.6rem;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+      background-color: #2F80ED;
+      color: #fff;
+      cursor: default;
+      display: flex;
+      justify-content: center;
+      width: 18rem;
+      margin: 1.35rem;
+      cursor: pointer; }
+      .StyleGuide .button-wrapper .button .plus-icon {
+        width: 16px;
+        margin: 0.5rem;
+        fill: rgba(255, 255, 255, 0.7);
+        transition: 0.2s; }
+      .StyleGuide .button-wrapper .button .loading-icon {
+        display: inline-block;
+        position: relative;
+        width: 2.6rem;
+        height: 2.6rem;
+        align-self: center; }
+        .StyleGuide .button-wrapper .button .loading-icon div {
+          box-sizing: border-box;
+          display: block;
+          position: absolute;
+          border-radius: 50%;
+          animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; }
+        .StyleGuide .button-wrapper .button .loading-icon div:nth-child(1) {
+          animation-delay: -0.45s; }
+        .StyleGuide .button-wrapper .button .loading-icon div:nth-child(2) {
+          animation-delay: -0.3s; }
+        .StyleGuide .button-wrapper .button .loading-icon div:nth-child(3) {
+          animation-delay: -0.15s; }
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+        .StyleGuide .button-wrapper .button .loading-icon div {
+          width: 2.6rem;
+          height: 2.6rem;
+          border: 3px solid #fff;
+          border-color: #fff transparent transparent transparent; }
+      .StyleGuide .button-wrapper .button.text-icon:hover .plus-icon {
+        fill: #fff;
+        transform: rotate(-90deg); }
+      .StyleGuide .button-wrapper .button.hover-focus {
+        background-color: #33ADFF;
+        color: #fff; }
+      .StyleGuide .button-wrapper .button.active {
+        background-color: #3F67D4;
+        color: #fff; }
+      .StyleGuide .button-wrapper .button.disabled {
+        background-color: #8EB7ED;
+        color: #fff;
+        pointer-events: none;
+        cursor: not-allowed; }
+      .StyleGuide .button-wrapper .button.loader {
+        background-color: #8EB7ED;
+        color: #fff;
+        pointer-events: none;
+        cursor: wait; }
+    .StyleGuide .button-wrapper .button-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18rem;
+      margin: 1.35rem;
+      padding: 0.5rem;
+      color: #696969;
+      font-size: 1.6rem; }
+
+@media screen and (max-width: 620px) {
+  .StyleGuide .page-title {
+    font-size: 24px;
+    width: 30rem; }
+  .StyleGuide .button-wrapper {
+    flex-direction: column; } }
