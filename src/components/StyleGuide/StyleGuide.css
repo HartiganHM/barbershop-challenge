@@ -37,6 +37,15 @@
         margin: 0.5rem;
         fill: rgba(255, 255, 255, 0.7);
         transition: 0.2s; }
+      .StyleGuide .home-link .home-wrapper .home-text {
+        align-self: baseline;
+        height: 1.6rem;
+        margin: 0.75rem 0.5rem;
+        padding: 0;
+        border: none;
+        background: none;
+        color: #fff;
+        cursor: pointer; }
     .StyleGuide .home-link:hover {
       background-color: #33ADFF;
       color: #fff; }
@@ -115,7 +124,14 @@
             border: 3px solid #fff;
             border-color: #fff transparent transparent transparent; }
         .StyleGuide .button-wrapper .button .wrapper .get-photos-text {
-          margin: 0.5rem; }
+          align-self: baseline;
+          height: 1.6rem;
+          margin: 0.75rem 0.5rem;
+          padding: 0;
+          border: none;
+          background: none;
+          color: #fff;
+          cursor: pointer; }
       .StyleGuide .button-wrapper .button.text-icon:hover .plus-icon {
         fill: #fff;
         transform: rotate(-90deg); }

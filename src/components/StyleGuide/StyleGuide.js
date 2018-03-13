@@ -50,7 +50,7 @@ const StyleGuide = () => {
             {button === 'Text + Icon' && plusIcon}
             {button === 'Loader' && loader}
             {button !== 'Loader' && (
-              <span className="get-photos-text">Click Me</span>
+              <input className="get-photos-text" type="submit" value="Click Me" />
             )}
           </a>
         </button>
@@ -67,7 +67,7 @@ const StyleGuide = () => {
           <svg viewBox="0 0 612 612" className="home-icon">
             <path d={iconData.home} />
           </svg>
-          <span className="home-text">Home</span>
+          <input className="home-text" type="submit" value="Home" />
         </Link>
       </button>
 
