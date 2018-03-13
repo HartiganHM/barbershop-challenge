@@ -17,21 +17,23 @@ export const Header = props => {
     };
 
     return (
-      <a
+      <button
         key={generateUniqueKey()}
         className={checkSelected('view-button')}
         onClick={() => changePhotosView(button)}
       >
-        <svg
-          className={checkSelected('view-icon')}
-          width="13"
-          height="10"
-          viewBox="0 0 13 10"
-        >
-          <path d={iconData[button]} />
-        </svg>
+        <a>
+          <svg
+            className={checkSelected('view-icon')}
+            width="13"
+            height="10"
+            viewBox="0 0 13 10"
+          >
+            <path d={iconData[button]} />
+          </svg>
+        </a>
         {button}
-      </a>
+      </button>
     );
   });
 
