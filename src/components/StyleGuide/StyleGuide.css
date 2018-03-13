@@ -11,26 +11,40 @@
     justify-content: space-around;
     height: 4rem;
     padding: 0.5rem;
+    border: none;
     border-radius: 2px;
+    box-sizing: border-box;
     background-color: #fff;
     color: #2F80ED;
     font-size: 1.6rem;
     transition: 0.2s ease-in-out;
+    outline: none;
     cursor: pointer;
     background-color: #2F80ED;
     color: #fff;
     cursor: default;
-    display: flex;
-    justify-content: center;
     width: 18rem;
     margin: 2rem;
-    cursor: pointer;
-    text-decoration: none; }
-    .StyleGuide .home-link .home-icon {
-      width: 16px;
-      margin: 0.5rem;
-      fill: rgba(255, 255, 255, 0.7);
-      transition: 0.2s; }
+    cursor: pointer; }
+    .StyleGuide .home-link .home-wrapper {
+      display: flex;
+      height: 3rem;
+      align-items: center;
+      text-decoration: none;
+      color: #fff; }
+      .StyleGuide .home-link .home-wrapper .home-icon {
+        width: 16px;
+        margin: 0.5rem;
+        fill: rgba(255, 255, 255, 0.7);
+        transition: 0.2s; }
+      .StyleGuide .home-link .home-wrapper .home-text {
+        align-self: baseline;
+        margin: 0.75rem 0.5rem;
+        padding: 0;
+        border: none;
+        background: none;
+        color: #fff;
+        cursor: pointer; }
     .StyleGuide .home-link:hover {
       background-color: #33ADFF;
       color: #fff; }
@@ -53,11 +67,14 @@
       justify-content: space-around;
       height: 4rem;
       padding: 0.5rem;
+      border: none;
       border-radius: 2px;
+      box-sizing: border-box;
       background-color: #fff;
       color: #2F80ED;
       font-size: 1.6rem;
       transition: 0.2s ease-in-out;
+      outline: none;
       cursor: pointer;
       background-color: #2F80ED;
       color: #fff;
@@ -67,40 +84,52 @@
       width: 18rem;
       margin: 1.35rem;
       cursor: pointer; }
-      .StyleGuide .button-wrapper .button .plus-icon {
-        width: 16px;
-        margin: 0.5rem;
-        fill: rgba(255, 255, 255, 0.7);
-        transition: 0.2s; }
-      .StyleGuide .button-wrapper .button .loading-icon {
-        display: inline-block;
-        position: relative;
-        width: 2.6rem;
-        height: 2.6rem;
-        align-self: center; }
-        .StyleGuide .button-wrapper .button .loading-icon div {
-          box-sizing: border-box;
-          display: block;
-          position: absolute;
-          border-radius: 50%;
-          animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; }
-        .StyleGuide .button-wrapper .button .loading-icon div:nth-child(1) {
-          animation-delay: -0.45s; }
-        .StyleGuide .button-wrapper .button .loading-icon div:nth-child(2) {
-          animation-delay: -0.3s; }
-        .StyleGuide .button-wrapper .button .loading-icon div:nth-child(3) {
-          animation-delay: -0.15s; }
+      .StyleGuide .button-wrapper .button .wrapper {
+        display: flex;
+        height: 3rem;
+        align-items: center; }
+        .StyleGuide .button-wrapper .button .wrapper .plus-icon {
+          width: 16px;
+          margin: 0.5rem;
+          fill: rgba(255, 255, 255, 0.7);
+          transition: 0.2s; }
+        .StyleGuide .button-wrapper .button .wrapper .loading-icon {
+          display: inline-block;
+          position: relative;
+          width: 2.6rem;
+          height: 2.6rem;
+          align-self: center; }
+          .StyleGuide .button-wrapper .button .wrapper .loading-icon div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; }
+          .StyleGuide .button-wrapper .button .wrapper .loading-icon div:nth-child(1) {
+            animation-delay: -0.45s; }
+          .StyleGuide .button-wrapper .button .wrapper .loading-icon div:nth-child(2) {
+            animation-delay: -0.3s; }
+          .StyleGuide .button-wrapper .button .wrapper .loading-icon div:nth-child(3) {
+            animation-delay: -0.15s; }
 
 @keyframes loader {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-        .StyleGuide .button-wrapper .button .loading-icon div {
-          width: 2.6rem;
-          height: 2.6rem;
-          border: 3px solid #fff;
-          border-color: #fff transparent transparent transparent; }
+          .StyleGuide .button-wrapper .button .wrapper .loading-icon div {
+            width: 2.6rem;
+            height: 2.6rem;
+            border: 3px solid #fff;
+            border-color: #fff transparent transparent transparent; }
+        .StyleGuide .button-wrapper .button .wrapper .get-photos-text {
+          align-self: baseline;
+          margin: 0.75rem 0.5rem;
+          padding: 0;
+          border: none;
+          background: none;
+          color: #fff;
+          cursor: pointer; }
       .StyleGuide .button-wrapper .button.text-icon:hover .plus-icon {
         fill: #fff;
         transform: rotate(-90deg); }

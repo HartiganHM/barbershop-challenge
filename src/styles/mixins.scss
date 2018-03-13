@@ -7,11 +7,14 @@
   justify-content: space-around;
   height: 4rem;
   padding: 0.5rem;
+  border: none;
   border-radius: 2px;
+  box-sizing: border-box;
   background-color: #fff;
   color: $blue-midtone;
   font-size: 1.6rem;
   transition: 0.2s ease-in-out;
+  outline: none;
   cursor: pointer;
 }
 

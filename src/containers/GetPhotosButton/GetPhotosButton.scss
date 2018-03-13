@@ -1,6 +1,5 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
-
 .GetPhotosButton {
   @include buttonDefaultAlternate;
   align-self: center;
@@ -9,23 +8,34 @@
   width: 18rem;
   margin: 2rem;
   cursor: pointer;
-  .plus-icon {
-    width: 16px;
-    margin: 0.5rem;
-    fill: $white-transparent;
-    transition: 0.2s;
-  }
-  .loader {
-    align-self: center;
-    @include buttonLoader;
-  }
-  .get-photos-text {
-    margin: 0.5rem;
+  .wrapper {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    .plus-icon {
+      width: 16px;
+      margin: 0.5rem;
+      fill: $white-transparent;
+      transition: 0.2s;
+    }
+    .loader {
+      align-self: center;
+      @include buttonLoader;
+    }
+    .get-photos-text {
+      align-self: baseline;
+      margin: 0.75rem 0.5rem;
+      padding: 0;
+      border: none;
+      background: none;
+      color: #fff;
+      cursor: pointer;
+    }
   }
   &:hover {
     @include buttonHover;
     .plus-icon {
-      fill: #FFF;
+      fill: #fff;
       transform: rotate(-90deg);
     }
   }

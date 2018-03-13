@@ -29,38 +29,54 @@ ShallowWrapper {
         <span
           className="button-wrapper"
         >
-          <a
+          <button
             className="view-button"
             onClick={[Function]}
           >
-            <svg
-              className="view-icon"
-              height="10"
-              viewBox="0 0 13 10"
-              width="13"
+            <a
+              className="wrapper"
             >
-              <path
-                d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+              <svg
+                className="view-icon"
+                height="10"
+                viewBox="0 0 13 10"
+                width="13"
+              >
+                <path
+                  d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                />
+              </svg>
+              <input
+                className="view-button-text"
+                type="submit"
+                value="Grid"
               />
-            </svg>
-            Grid
-          </a>
-          <a
+            </a>
+          </button>
+          <button
             className="view-button selected"
             onClick={[Function]}
           >
-            <svg
-              className="view-icon selected"
-              height="10"
-              viewBox="0 0 13 10"
-              width="13"
+            <a
+              className="wrapper"
             >
-              <path
-                d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+              <svg
+                className="view-icon selected"
+                height="10"
+                viewBox="0 0 13 10"
+                width="13"
+              >
+                <path
+                  d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                />
+              </svg>
+              <input
+                className="view-button-text"
+                type="submit"
+                value="List"
               />
-            </svg>
-            List
-          </a>
+            </a>
+          </button>
         </span>,
       ],
       "className": "Header",
@@ -85,38 +101,54 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <a
+            <button
               className="view-button"
               onClick={[Function]}
             >
-              <svg
-                className="view-icon"
-                height="10"
-                viewBox="0 0 13 10"
-                width="13"
+              <a
+                className="wrapper"
               >
-                <path
-                  d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                <svg
+                  className="view-icon"
+                  height="10"
+                  viewBox="0 0 13 10"
+                  width="13"
+                >
+                  <path
+                    d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                  />
+                </svg>
+                <input
+                  className="view-button-text"
+                  type="submit"
+                  value="Grid"
                 />
-              </svg>
-              Grid
-            </a>,
-            <a
+              </a>
+            </button>,
+            <button
               className="view-button selected"
               onClick={[Function]}
             >
-              <svg
-                className="view-icon selected"
-                height="10"
-                viewBox="0 0 13 10"
-                width="13"
+              <a
+                className="wrapper"
               >
-                <path
-                  d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                <svg
+                  className="view-icon selected"
+                  height="10"
+                  viewBox="0 0 13 10"
+                  width="13"
+                >
+                  <path
+                    d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                  />
+                </svg>
+                <input
+                  className="view-button-text"
+                  type="submit"
+                  value="List"
                 />
-              </svg>
-              List
-            </a>,
+              </a>
+            </button>,
           ],
           "className": "button-wrapper",
         },
@@ -127,7 +159,9 @@ ShallowWrapper {
             "key": "1",
             "nodeType": "host",
             "props": Object {
-              "children": Array [
+              "children": <a
+                className="wrapper"
+              >
                 <svg
                   className="view-icon"
                   height="10"
@@ -137,216 +171,20 @@ ShallowWrapper {
                   <path
                     d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
                   />
-                </svg>,
-                "Grid",
-              ],
+                </svg>
+                <input
+                  className="view-button-text"
+                  type="submit"
+                  value="Grid"
+                />
+              </a>,
               "className": "view-button",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <path
-                    d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
-                  />,
-                  "className": "view-icon",
-                  "height": "10",
-                  "viewBox": "0 0 13 10",
-                  "width": "13",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "d": "M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "path",
-                },
-                "type": "svg",
-              },
-              "Grid",
-            ],
-            "type": "a",
-          },
-          Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <svg
-                  className="view-icon selected"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  width="13"
-                >
-                  <path
-                    d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
-                  />
-                </svg>,
-                "List",
-              ],
-              "className": "view-button selected",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <path
-                    d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
-                  />,
-                  "className": "view-icon selected",
-                  "height": "10",
-                  "viewBox": "0 0 13 10",
-                  "width": "13",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "d": "M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "path",
-                },
-                "type": "svg",
-              },
-              "List",
-            ],
-            "type": "a",
-          },
-        ],
-        "type": "span",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <h1
-            className="header-title"
-          >
-            My Photos
-          </h1>,
-          <span
-            className="button-wrapper"
-          >
-            <a
-              className="view-button"
-              onClick={[Function]}
-            >
-              <svg
-                className="view-icon"
-                height="10"
-                viewBox="0 0 13 10"
-                width="13"
-              >
-                <path
-                  d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
-                />
-              </svg>
-              Grid
-            </a>
-            <a
-              className="view-button selected"
-              onClick={[Function]}
-            >
-              <svg
-                className="view-icon selected"
-                height="10"
-                viewBox="0 0 13 10"
-                width="13"
-              >
-                <path
-                  d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
-                />
-              </svg>
-              List
-            </a>
-          </span>,
-        ],
-        "className": "Header",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "My Photos",
-            "className": "header-title",
-          },
-          "ref": null,
-          "rendered": "My Photos",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <a
-                className="view-button"
-                onClick={[Function]}
-              >
-                <svg
-                  className="view-icon"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  width="13"
-                >
-                  <path
-                    d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
-                  />
-                </svg>
-                Grid
-              </a>,
-              <a
-                className="view-button selected"
-                onClick={[Function]}
-              >
-                <svg
-                  className="view-icon selected"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  width="13"
-                >
-                  <path
-                    d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
-                  />
-                </svg>
-                List
-              </a>,
-            ],
-            "className": "button-wrapper",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
+            "rendered": Object {
               "instance": null,
-              "key": "1",
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": Array [
@@ -360,10 +198,13 @@ ShallowWrapper {
                       d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
                     />
                   </svg>,
-                  "Grid",
+                  <input
+                    className="view-button-text"
+                    type="submit"
+                    value="Grid"
+                  />,
                 ],
-                "className": "view-button",
-                "onClick": [Function],
+                "className": "wrapper",
               },
               "ref": null,
               "rendered": Array [
@@ -394,13 +235,55 @@ ShallowWrapper {
                   },
                   "type": "svg",
                 },
-                "Grid",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "view-button-text",
+                    "type": "submit",
+                    "value": "Grid",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
               ],
               "type": "a",
             },
-            Object {
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="wrapper"
+              >
+                <svg
+                  className="view-icon selected"
+                  height="10"
+                  viewBox="0 0 13 10"
+                  width="13"
+                >
+                  <path
+                    d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                  />
+                </svg>
+                <input
+                  className="view-button-text"
+                  type="submit"
+                  value="List"
+                />
+              </a>,
+              "className": "view-button selected",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
               "instance": null,
-              "key": "1",
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": Array [
@@ -414,10 +297,13 @@ ShallowWrapper {
                       d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
                     />
                   </svg>,
-                  "List",
+                  <input
+                    className="view-button-text"
+                    type="submit"
+                    value="List"
+                  />,
                 ],
-                "className": "view-button selected",
-                "onClick": [Function],
+                "className": "wrapper",
               },
               "ref": null,
               "rendered": Array [
@@ -448,9 +334,367 @@ ShallowWrapper {
                   },
                   "type": "svg",
                 },
-                "List",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "view-button-text",
+                    "type": "submit",
+                    "value": "List",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
               ],
               "type": "a",
+            },
+            "type": "button",
+          },
+        ],
+        "type": "span",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="header-title"
+          >
+            My Photos
+          </h1>,
+          <span
+            className="button-wrapper"
+          >
+            <button
+              className="view-button"
+              onClick={[Function]}
+            >
+              <a
+                className="wrapper"
+              >
+                <svg
+                  className="view-icon"
+                  height="10"
+                  viewBox="0 0 13 10"
+                  width="13"
+                >
+                  <path
+                    d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                  />
+                </svg>
+                <input
+                  className="view-button-text"
+                  type="submit"
+                  value="Grid"
+                />
+              </a>
+            </button>
+            <button
+              className="view-button selected"
+              onClick={[Function]}
+            >
+              <a
+                className="wrapper"
+              >
+                <svg
+                  className="view-icon selected"
+                  height="10"
+                  viewBox="0 0 13 10"
+                  width="13"
+                >
+                  <path
+                    d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                  />
+                </svg>
+                <input
+                  className="view-button-text"
+                  type="submit"
+                  value="List"
+                />
+              </a>
+            </button>
+          </span>,
+        ],
+        "className": "Header",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "My Photos",
+            "className": "header-title",
+          },
+          "ref": null,
+          "rendered": "My Photos",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="view-button"
+                onClick={[Function]}
+              >
+                <a
+                  className="wrapper"
+                >
+                  <svg
+                    className="view-icon"
+                    height="10"
+                    viewBox="0 0 13 10"
+                    width="13"
+                  >
+                    <path
+                      d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                    />
+                  </svg>
+                  <input
+                    className="view-button-text"
+                    type="submit"
+                    value="Grid"
+                  />
+                </a>
+              </button>,
+              <button
+                className="view-button selected"
+                onClick={[Function]}
+              >
+                <a
+                  className="wrapper"
+                >
+                  <svg
+                    className="view-icon selected"
+                    height="10"
+                    viewBox="0 0 13 10"
+                    width="13"
+                  >
+                    <path
+                      d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                    />
+                  </svg>
+                  <input
+                    className="view-button-text"
+                    type="submit"
+                    value="List"
+                  />
+                </a>
+              </button>,
+            ],
+            "className": "button-wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="wrapper"
+                >
+                  <svg
+                    className="view-icon"
+                    height="10"
+                    viewBox="0 0 13 10"
+                    width="13"
+                  >
+                    <path
+                      d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                    />
+                  </svg>
+                  <input
+                    className="view-button-text"
+                    type="submit"
+                    value="Grid"
+                  />
+                </a>,
+                "className": "view-button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <svg
+                      className="view-icon"
+                      height="10"
+                      viewBox="0 0 13 10"
+                      width="13"
+                    >
+                      <path
+                        d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                      />
+                    </svg>,
+                    <input
+                      className="view-button-text"
+                      type="submit"
+                      value="Grid"
+                    />,
+                  ],
+                  "className": "wrapper",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <path
+                        d="M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z"
+                      />,
+                      "className": "view-icon",
+                      "height": "10",
+                      "viewBox": "0 0 13 10",
+                      "width": "13",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M 0 4L 3.33333 4L 3.33333 0L 0 0L 0 4ZM 0 8.66675L 3.33333 8.66675L 3.33333 4.66675L 0 4.66675L 0 8.66675ZM 3.99997 8.66675L 7.3333 8.66675L 7.3333 4.66675L 3.99997 4.66675L 3.99997 8.66675ZM 7.99997 8.66675L 11.3333 8.66675L 11.3333 4.66675L 7.99997 4.66675L 7.99997 8.66675ZM 3.99997 4L 7.3333 4L 7.3333 0L 3.99997 0L 3.99997 4ZM 7.99997 0L 7.99997 4L 11.3333 4L 11.3333 0L 7.99997 0Z",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    "type": "svg",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "view-button-text",
+                      "type": "submit",
+                      "value": "Grid",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "a",
+              },
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="wrapper"
+                >
+                  <svg
+                    className="view-icon selected"
+                    height="10"
+                    viewBox="0 0 13 10"
+                    width="13"
+                  >
+                    <path
+                      d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                    />
+                  </svg>
+                  <input
+                    className="view-button-text"
+                    type="submit"
+                    value="List"
+                  />
+                </a>,
+                "className": "view-button selected",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <svg
+                      className="view-icon selected"
+                      height="10"
+                      viewBox="0 0 13 10"
+                      width="13"
+                    >
+                      <path
+                        d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                      />
+                    </svg>,
+                    <input
+                      className="view-button-text"
+                      type="submit"
+                      value="List"
+                    />,
+                  ],
+                  "className": "wrapper",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <path
+                        d="M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z"
+                      />,
+                      "className": "view-icon selected",
+                      "height": "10",
+                      "viewBox": "0 0 13 10",
+                      "width": "13",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "d": "M 1 4C 0.446667 4 0 4.44667 0 5C 0 5.55333 0.446667 6 1 6C 1.55333 6 2 5.55333 2 5C 2 4.44667 1.55333 4 1 4ZM 1 0C 0.446667 0 0 0.446667 0 1C 0 1.55333 0.446667 2 1 2C 1.55333 2 2 1.55333 2 1C 2 0.446667 1.55333 0 1 0ZM 0.999948 8.11328C 0.506615 8.11328 0.113281 8.51328 0.113281 8.99995C 0.113281 9.48661 0.513281 9.88661 0.999948 9.88661C 1.48661 9.88661 1.88661 9.48661 1.88661 8.99995C 1.88661 8.51328 1.49328 8.11328 0.999948 8.11328ZM 3 9.66671L 12.3333 9.66671L 12.3333 8.33337L 3 8.33337L 3 9.66671ZM 3 5.66671L 12.3333 5.66671L 12.3333 4.33337L 3 4.33337L 3 5.66671ZM 3 0.333374L 3 1.66671L 12.3333 1.66671L 12.3333 0.333374L 3 0.333374Z",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "path",
+                    },
+                    "type": "svg",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "view-button-text",
+                      "type": "submit",
+                      "value": "List",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "a",
+              },
+              "type": "button",
             },
           ],
           "type": "span",

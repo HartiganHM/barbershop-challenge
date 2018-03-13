@@ -18,28 +18,44 @@
       justify-content: space-around;
       height: 4rem;
       padding: 0.5rem;
+      border: none;
       border-radius: 2px;
+      box-sizing: border-box;
       background-color: #fff;
       color: #2F80ED;
       font-size: 1.6rem;
       transition: 0.2s ease-in-out;
+      outline: none;
       cursor: pointer;
       width: 8rem; }
-      .Header .button-wrapper .view-button .view-icon {
-        fill: rgba(47, 128, 237, 0.7);
-        transition: 0.2s ease-in-out; }
-        .Header .button-wrapper .view-button .view-icon.selected {
-          fill: #fff; }
+      .Header .button-wrapper .view-button .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 7rem;
+        padding: 0 0.5rem; }
+        .Header .button-wrapper .view-button .wrapper .view-icon {
+          fill: rgba(47, 128, 237, 0.7);
+          transition: 0.2s ease-in-out; }
+          .Header .button-wrapper .view-button .wrapper .view-icon.selected {
+            fill: #fff; }
+        .Header .button-wrapper .view-button .wrapper .view-button-text {
+          align-self: baseline;
+          padding: 0;
+          border: none;
+          background: none;
+          color: #2F80ED;
+          cursor: pointer; }
       .Header .button-wrapper .view-button:hover {
         background-color: #33ADFF;
         color: #fff; }
         .Header .button-wrapper .view-button:hover .view-icon {
           fill: #fff; }
+        .Header .button-wrapper .view-button:hover .view-button-text {
+          color: #fff; }
       .Header .button-wrapper .view-button:active {
         background-color: #3F67D4;
         color: #fff; }
-        .Header .button-wrapper .view-button:active .view-icon {
-          fill: #fff; }
       .Header .button-wrapper .view-button:disabled {
         background-color: #8EB7ED;
         color: #fff;
@@ -52,15 +68,20 @@
         justify-content: space-around;
         height: 4rem;
         padding: 0.5rem;
+        border: none;
         border-radius: 2px;
+        box-sizing: border-box;
         background-color: #fff;
         color: #2F80ED;
         font-size: 1.6rem;
         transition: 0.2s ease-in-out;
+        outline: none;
         cursor: pointer;
         background-color: #2F80ED;
         color: #fff;
         cursor: default; }
+        .Header .button-wrapper .view-button.selected .view-button-text {
+          color: #fff; }
 
 @media screen and (max-width: 1260px) {
   .Header {

@@ -45,9 +45,12 @@ export class GetPhotosButton extends Component {
       >
         <path d={iconData.getPhotos} />
       </svg>,
-      <span key={generateUniqueKey()} className="get-photos-text">
-        Get Photos
-      </span>
+      <input
+        key={generateUniqueKey()}
+        className="get-photos-text"
+        type="submit"
+        value="Get Photos"
+      />
     ];
 
     const loader = (
@@ -60,9 +63,11 @@ export class GetPhotosButton extends Component {
     );
 
     return (
-      <a className={currentClass} onClick={() => this.handleClick(photos)}>
-        {imageTotal === photos.length ? enabledButton : loader}
-      </a>
+      <button className={currentClass} onClick={() => this.handleClick(photos)}>
+        <a className="wrapper">
+          {imageTotal === photos.length ? enabledButton : loader}
+        </a>
+      </button>
     );
   }
 }

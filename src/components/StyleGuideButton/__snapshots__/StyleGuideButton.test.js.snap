@@ -15,9 +15,13 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <Link
+        className="style-wrapper"
+        replace={false}
+        to="/styleguide"
+      >
         <svg
           className="style-icon"
           viewBox="0 0 19.3 19.3"
@@ -27,65 +31,17 @@ ShallowWrapper {
     C19,0.8,10.1,7.5,7.6,10.3z M5.9,12.4c-1.2-0.2-2.5,0.6-3.3,2.5c-0.8,2-2.3,2.8-2.6,2.7c1.5,0.6,6.2,2,7.3-3.4
     C6.9,12.9,5.9,12.4,5.9,12.4z"
           />
-        </svg>,
-        <span
+        </svg>
+        <input
           className="style-text"
-        >
-          Style Guide
-        </span>,
-      ],
+          type="submit"
+          value="Style Guide"
+        />
+      </Link>,
       "className": "StyleGuideButton",
-      "replace": false,
-      "to": "/styleguide",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <path
-            d="M7.6,10.3c-0.4,0.4-0.5,0.7-0.9,1.5C7,11.9,7.6,12.4,8,13.3c0.8-0.5,1.2-0.5,1.7-0.9c2.9-2.4,9.9-11,9.6-11.3
-    C19,0.8,10.1,7.5,7.6,10.3z M5.9,12.4c-1.2-0.2-2.5,0.6-3.3,2.5c-0.8,2-2.3,2.8-2.6,2.7c1.5,0.6,6.2,2,7.3-3.4
-    C6.9,12.9,5.9,12.4,5.9,12.4z"
-          />,
-          "className": "style-icon",
-          "viewBox": "0 0 19.3 19.3",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "d": "M7.6,10.3c-0.4,0.4-0.5,0.7-0.9,1.5C7,11.9,7.6,12.4,8,13.3c0.8-0.5,1.2-0.5,1.7-0.9c2.9-2.4,9.9-11,9.6-11.3
-    C19,0.8,10.1,7.5,7.6,10.3z M5.9,12.4c-1.2-0.2-2.5,0.6-3.3,2.5c-0.8,2-2.3,2.8-2.6,2.7c1.5,0.6,6.2,2,7.3-3.4
-    C6.9,12.9,5.9,12.4,5.9,12.4z",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "path",
-        },
-        "type": "svg",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Style Guide",
-          "className": "style-text",
-        },
-        "ref": null,
-        "rendered": "Style Guide",
-        "type": "span",
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -101,13 +57,13 @@ ShallowWrapper {
     C6.9,12.9,5.9,12.4,5.9,12.4z"
             />
           </svg>,
-          <span
+          <input
             className="style-text"
-          >
-            Style Guide
-          </span>,
+            type="submit"
+            value="Style Guide"
+          />,
         ],
-        "className": "StyleGuideButton",
+        "className": "style-wrapper",
         "replace": false,
         "to": "/styleguide",
       },
@@ -147,15 +103,123 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Style Guide",
             "className": "style-text",
+            "type": "submit",
+            "value": "Style Guide",
           },
           "ref": null,
-          "rendered": "Style Guide",
-          "type": "span",
+          "rendered": null,
+          "type": "input",
         },
       ],
       "type": [Function],
+    },
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Link
+          className="style-wrapper"
+          replace={false}
+          to="/styleguide"
+        >
+          <svg
+            className="style-icon"
+            viewBox="0 0 19.3 19.3"
+          >
+            <path
+              d="M7.6,10.3c-0.4,0.4-0.5,0.7-0.9,1.5C7,11.9,7.6,12.4,8,13.3c0.8-0.5,1.2-0.5,1.7-0.9c2.9-2.4,9.9-11,9.6-11.3
+    C19,0.8,10.1,7.5,7.6,10.3z M5.9,12.4c-1.2-0.2-2.5,0.6-3.3,2.5c-0.8,2-2.3,2.8-2.6,2.7c1.5,0.6,6.2,2,7.3-3.4
+    C6.9,12.9,5.9,12.4,5.9,12.4z"
+            />
+          </svg>
+          <input
+            className="style-text"
+            type="submit"
+            value="Style Guide"
+          />
+        </Link>,
+        "className": "StyleGuideButton",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <svg
+              className="style-icon"
+              viewBox="0 0 19.3 19.3"
+            >
+              <path
+                d="M7.6,10.3c-0.4,0.4-0.5,0.7-0.9,1.5C7,11.9,7.6,12.4,8,13.3c0.8-0.5,1.2-0.5,1.7-0.9c2.9-2.4,9.9-11,9.6-11.3
+    C19,0.8,10.1,7.5,7.6,10.3z M5.9,12.4c-1.2-0.2-2.5,0.6-3.3,2.5c-0.8,2-2.3,2.8-2.6,2.7c1.5,0.6,6.2,2,7.3-3.4
+    C6.9,12.9,5.9,12.4,5.9,12.4z"
+              />
+            </svg>,
+            <input
+              className="style-text"
+              type="submit"
+              value="Style Guide"
+            />,
+          ],
+          "className": "style-wrapper",
+          "replace": false,
+          "to": "/styleguide",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <path
+                d="M7.6,10.3c-0.4,0.4-0.5,0.7-0.9,1.5C7,11.9,7.6,12.4,8,13.3c0.8-0.5,1.2-0.5,1.7-0.9c2.9-2.4,9.9-11,9.6-11.3
+    C19,0.8,10.1,7.5,7.6,10.3z M5.9,12.4c-1.2-0.2-2.5,0.6-3.3,2.5c-0.8,2-2.3,2.8-2.6,2.7c1.5,0.6,6.2,2,7.3-3.4
+    C6.9,12.9,5.9,12.4,5.9,12.4z"
+              />,
+              "className": "style-icon",
+              "viewBox": "0 0 19.3 19.3",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "d": "M7.6,10.3c-0.4,0.4-0.5,0.7-0.9,1.5C7,11.9,7.6,12.4,8,13.3c0.8-0.5,1.2-0.5,1.7-0.9c2.9-2.4,9.9-11,9.6-11.3
+    C19,0.8,10.1,7.5,7.6,10.3z M5.9,12.4c-1.2-0.2-2.5,0.6-3.3,2.5c-0.8,2-2.3,2.8-2.6,2.7c1.5,0.6,6.2,2,7.3-3.4
+    C6.9,12.9,5.9,12.4,5.9,12.4z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "path",
+            },
+            "type": "svg",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "style-text",
+              "type": "submit",
+              "value": "Style Guide",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "button",
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -32,7 +32,12 @@ describe('Header tests', () => {
     );
 
     expect(selectedButton.length).toEqual(expectedLength);
-    expect(selectedButton.text()).toEqual(expectedText);
+    expect(
+      selectedButton
+        .children()
+        .children('input')
+        .props().value
+    ).toEqual(expectedText);
   });
 
   it('Should change selected class if currentView is changed', () => {
@@ -45,7 +50,12 @@ describe('Header tests', () => {
     );
 
     expect(selectedButton.length).toEqual(expectedLength);
-    expect(selectedButton.text()).toEqual(expectedText);
+    expect(
+      selectedButton
+        .children()
+        .children('input')
+        .props().value
+    ).toEqual(expectedText);
   });
 });
 
