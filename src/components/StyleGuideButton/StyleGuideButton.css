@@ -13,6 +13,7 @@
   color: #2F80ED;
   font-size: 1.6rem;
   transition: 0.2s ease-in-out;
+  outline: none;
   cursor: pointer;
   background-color: #2F80ED;
   color: #fff;
