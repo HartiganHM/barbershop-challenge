@@ -63,12 +63,19 @@
         border: 3px solid #fff;
         border-color: #fff transparent transparent transparent; }
     .GetPhotosButton .wrapper .get-photos-text {
-      margin: 0.5rem; }
+      align-self: baseline;
+      height: 1.6rem;
+      margin: 0.75rem 0.5rem;
+      padding: 0;
+      border: none;
+      background: none;
+      color: #fff;
+      cursor: pointer; }
   .GetPhotosButton:hover {
     background-color: #33ADFF;
     color: #fff; }
     .GetPhotosButton:hover .plus-icon {
-      fill: #FFF;
+      fill: #fff;
       transform: rotate(-90deg); }
   .GetPhotosButton:active {
     background-color: #3F67D4;

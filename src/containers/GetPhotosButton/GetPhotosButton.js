@@ -45,9 +45,7 @@ export class GetPhotosButton extends Component {
       >
         <path d={iconData.getPhotos} />
       </svg>,
-      <span key={generateUniqueKey()} className="get-photos-text">
-        Get Photos
-      </span>
+      <input key={generateUniqueKey()} className="get-photos-text" type="submit" value="Get Photos" />
     ];
 
     const loader = (
