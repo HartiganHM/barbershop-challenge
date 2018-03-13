@@ -33,7 +33,14 @@
       fill: rgba(255, 255, 255, 0.7);
       transition: 0.2s; }
     .StyleGuideButton .style-wrapper .style-text {
-      margin-left: 1rem; }
+      align-self: baseline;
+      margin: 0.75rem 0.5rem;
+      margin-left: 1rem;
+      padding: 0;
+      border: none;
+      background: none;
+      color: #fff;
+      cursor: pointer; }
   .StyleGuideButton:hover {
     background-color: #33ADFF;
     color: #fff; }

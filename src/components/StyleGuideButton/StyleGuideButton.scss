@@ -18,7 +18,14 @@
       transition: 0.2s;
     }
     .style-text {
+      align-self: baseline;
+      margin: 0.75rem 0.5rem;
       margin-left: 1rem;
+      padding: 0;
+      border: none;
+      background: none;
+      color: #fff;
+      cursor: pointer;
     }
   }
   &:hover {
