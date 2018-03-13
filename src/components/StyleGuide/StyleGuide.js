@@ -60,12 +60,14 @@ const StyleGuide = () => {
 
   return (
     <div className="StyleGuide">
-      <Link to="/" className="home-link">
-        <svg viewBox="0 0 612 612" className="home-icon">
-          <path d={iconData.home} />
-        </svg>
-        <span className="home-text">Home</span>
-      </Link>
+      <button className="home-link">
+        <Link to="/" className="home-wrapper">
+          <svg viewBox="0 0 612 612" className="home-icon">
+            <path d={iconData.home} />
+          </svg>
+          <span className="home-text">Home</span>
+        </Link>
+      </button>
 
       <h2 className="page-title">Barbershop Challenge Style Guide</h2>
 

@@ -23,17 +23,20 @@
     background-color: #2F80ED;
     color: #fff;
     cursor: default;
-    display: flex;
-    justify-content: center;
     width: 18rem;
     margin: 2rem;
-    cursor: pointer;
-    text-decoration: none; }
-    .StyleGuide .home-link .home-icon {
-      width: 16px;
-      margin: 0.5rem;
-      fill: rgba(255, 255, 255, 0.7);
-      transition: 0.2s; }
+    cursor: pointer; }
+    .StyleGuide .home-link .home-wrapper {
+      display: flex;
+      height: 3rem;
+      align-items: center;
+      text-decoration: none;
+      color: #fff; }
+      .StyleGuide .home-link .home-wrapper .home-icon {
+        width: 16px;
+        margin: 0.5rem;
+        fill: rgba(255, 255, 255, 0.7);
+        transition: 0.2s; }
     .StyleGuide .home-link:hover {
       background-color: #33ADFF;
       color: #fff; }
