@@ -49,8 +49,7 @@ This will create a file called `unsplashCredentials.js` in the `src/` directory 
 // unsplashCredentials.js
 
 const unsplashCredentails = {
-  APPLICATION_ID:
-    '{APP_ID}',
+  APPLICATION_ID: '{APP_ID}',
   SECRET: '{APP_SECRET}',
   CALLBACK_URL: '{CALLBACK_URL}'
 };
@@ -88,9 +87,9 @@ This will check all existing `.js` files through the `.eslintrc.js` file found i
 
 ## Style guide
 
-The styling of this project uses Sass with an independent style sheet for any component or container. The `styles/` directory holds all mixins and variables which reference reused styling methods for specific content sections, as well as the overarching color palette for the project.
+The styling of this project uses Sass with an independent style sheet for any component or container. The `/styles` directory holds all mixins and variables which reference reused styling methods for specific content sections, as well as the overarching color palette for the project.
 
 ## Api Reference
 
-(Unsplash API)[https://unsplash.com/developers]
-(unsplash-js)[https://github.com/unsplash/unsplash-js]
+* [Unsplash API](https://unsplash.com/developers)
+* [unsplash-js](https://github.com/unsplash/unsplash-js)
