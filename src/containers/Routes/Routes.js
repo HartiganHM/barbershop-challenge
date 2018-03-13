@@ -26,9 +26,9 @@ export class Routes extends Component {
         render={() => [
           <Header key={generateUniqueKey()} />,
           <PhotoContainer key={generateUniqueKey()} />,
-          <div className="footer-button-wrapper">
-            <GetPhotosButton key={generateUniqueKey()} />
-            <StyleGuideButton key={generateUniqueKey()} />
+          <div className="footer-button-wrapper" key={generateUniqueKey()}>
+            <GetPhotosButton />
+            <StyleGuideButton />
           </div>
         ]}
       />,
