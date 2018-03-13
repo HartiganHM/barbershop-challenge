@@ -23,17 +23,26 @@
           fill: #fff;
         }
       }
+      .view-button-text {
+        align-self: baseline;
+        margin: 0.75rem 0.5rem;
+        padding: 0;
+        border: none;
+        background: none;
+        color: $blue-midtone;
+        cursor: pointer;
+      }
       &:hover {
         @include buttonHover;
         .view-icon {
           fill: #fff;
         }
+        .view-button-text {
+          color: #fff;
+        }
       }
       &:active {
         @include buttonActive;
-        .view-icon {
-          fill: #fff;
-        }
       }
       &:disabled {
         @include buttonDisabled;
@@ -43,6 +52,9 @@
       }
       &.selected {
         @include buttonDefaultAlternate;
+        .view-button-text {
+          color: #fff;
+        }
       }
     }
   }

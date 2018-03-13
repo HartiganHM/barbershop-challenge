@@ -33,16 +33,24 @@
         transition: 0.2s ease-in-out; }
         .Header .button-wrapper .view-button .view-icon.selected {
           fill: #fff; }
+      .Header .button-wrapper .view-button .view-button-text {
+        align-self: baseline;
+        margin: 0.75rem 0.5rem;
+        padding: 0;
+        border: none;
+        background: none;
+        color: #2F80ED;
+        cursor: pointer; }
       .Header .button-wrapper .view-button:hover {
         background-color: #33ADFF;
         color: #fff; }
         .Header .button-wrapper .view-button:hover .view-icon {
           fill: #fff; }
+        .Header .button-wrapper .view-button:hover .view-button-text {
+          color: #fff; }
       .Header .button-wrapper .view-button:active {
         background-color: #3F67D4;
         color: #fff; }
-        .Header .button-wrapper .view-button:active .view-icon {
-          fill: #fff; }
       .Header .button-wrapper .view-button:disabled {
         background-color: #8EB7ED;
         color: #fff;
@@ -67,6 +75,8 @@
         background-color: #2F80ED;
         color: #fff;
         cursor: default; }
+        .Header .button-wrapper .view-button.selected .view-button-text {
+          color: #fff; }
 
 @media screen and (max-width: 1260px) {
   .Header {
