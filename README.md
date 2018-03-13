@@ -19,7 +19,7 @@ This will clone the repository to your machine under the directory `barbershop-c
 npm run build-css
 ```
 
-This will allow `node-sass-chokidar` to build the `.css` files that all of the `.js` require when running. 
+This will allow `node-sass-chokidar` to build the `.css` files that all of the `.js` files require when running. 
 
 You should now be ready to start the application! Run the following command to boot it up:
 
@@ -35,7 +35,7 @@ This script has been built to start your application on `localhost:3000`, as wel
 React, Redux, Router, Sass, Enzyme, Jest
 
 ### Prerequisites
-This application requires access to the Unsplash API. In order to gain acces, you will have to have to (sign-up for an account here)[https://unsplash.com/developers]. Step-by-step instructions for how to use the Unsplash API in JavaScript around found in the (`unsplash-js` GitHub repository)[https://github.com/unsplash/unsplash-js].
+This application requires access to the Unsplash API. In order to gain acces, you will have to have to [sign-up for an account here](https://unsplash.com/developers). Step-by-step instructions for how to use the Unsplash API in JavaScript around found in the [`unsplash-js` GitHub repository](https://github.com/unsplash/unsplash-js).
 
 Once logged in, start a 'New Application' which will give you a set of credentials to access the API from the application. From your terminal, execute the following:
 
@@ -60,6 +60,7 @@ export default unsplashCredentails;
 Keep key names identical to the above, as they are referenced elsewhere in the application. Should you choose to change them, make sure to change them in the `unsplash` helper function as well.
 
 ## Tests
+
 The testing suite runs through Enzyme and Jest. To run the testing suite, enter the following command:
 
 ```shell
@@ -73,10 +74,19 @@ Any new tests will populate in the terminal. If no changes have been made to any
 * `t`: Filter tests by test name
 * `q`: Quit watch mode
 
-The testing suite is comprhenzive in scope, checking all `.js` files, including Redux architecture, React conditional rendering, helper functions, and API calls.
+The testing suite is comprhenzive in scope, checking all `.js` files, including Redux architecture, React conditional rendering, helper functions, and API calls. For any PRs to be accepted, all tests must be passing.
+
+## Linting
+
+The linting for this application is run through the following command:
+
+```shell
+npm run eslint
+```
+
+This will check all existing `.js` files through the `.eslintrc.js` file found in the root of the repository. If you create any directories that are more deeply nested, add the required relative path to the `eslint` script in the `package.json`. For any PRs to be accepted, there must be zero linting errors.
 
 ## Style guide
-
 
 The styling of this project uses Sass with an independent style sheet for any component or container. The `styles/` directory holds all mixins and variables which reference reused styling methods for specific content sections, as well as the overarching color palette for the project.
 
