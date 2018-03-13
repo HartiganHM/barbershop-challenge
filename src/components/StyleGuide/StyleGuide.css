@@ -39,7 +39,6 @@
         transition: 0.2s; }
       .StyleGuide .home-link .home-wrapper .home-text {
         align-self: baseline;
-        height: 1.6rem;
         margin: 0.75rem 0.5rem;
         padding: 0;
         border: none;
@@ -125,7 +124,6 @@
             border-color: #fff transparent transparent transparent; }
         .StyleGuide .button-wrapper .button .wrapper .get-photos-text {
           align-self: baseline;
-          height: 1.6rem;
           margin: 0.75rem 0.5rem;
           padding: 0;
           border: none;
