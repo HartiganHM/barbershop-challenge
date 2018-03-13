@@ -8,6 +8,7 @@
   padding: 0.5rem;
   border: none;
   border-radius: 2px;
+  box-sizing: border-box;
   background-color: #fff;
   color: #2F80ED;
   font-size: 1.6rem;
@@ -16,20 +17,22 @@
   background-color: #2F80ED;
   color: #fff;
   cursor: default;
-  align-self: center;
-  display: flex;
-  justify-content: center;
   width: 18rem;
   margin: 2rem;
-  cursor: pointer;
-  text-decoration: none; }
-  .StyleGuideButton .style-icon {
-    width: 16px;
-    margin: 0.5rem;
-    fill: rgba(255, 255, 255, 0.7);
-    transition: 0.2s; }
-  .StyleGuideButton .style-text {
-    margin-left: 1rem; }
+  cursor: pointer; }
+  .StyleGuideButton .style-wrapper {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; }
+    .StyleGuideButton .style-wrapper .style-icon {
+      width: 16px;
+      margin: 0.5rem;
+      fill: rgba(255, 255, 255, 0.7);
+      transition: 0.2s; }
+    .StyleGuideButton .style-wrapper .style-text {
+      margin-left: 1rem; }
   .StyleGuideButton:hover {
     background-color: #33ADFF;
     color: #fff; }

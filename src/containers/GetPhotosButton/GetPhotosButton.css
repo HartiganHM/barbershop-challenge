@@ -8,6 +8,7 @@
   padding: 0.5rem;
   border: none;
   border-radius: 2px;
+  box-sizing: border-box;
   background-color: #fff;
   color: #2F80ED;
   font-size: 1.6rem;
