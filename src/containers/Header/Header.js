@@ -22,7 +22,7 @@ export const Header = props => {
         className={checkSelected('view-button')}
         onClick={() => changePhotosView(button)}
       >
-        <a>
+        <a className="wrapper">
           <svg
             className={checkSelected('view-icon')}
             width="13"

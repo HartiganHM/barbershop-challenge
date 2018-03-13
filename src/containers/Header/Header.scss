@@ -16,21 +16,27 @@
     .view-button {
       @include buttonDefault;
       width: 8rem;
-      .view-icon {
-        fill: $blue-midtone-transparent;
-        transition: 0.2s ease-in-out;
-        &.selected {
-          fill: #fff;
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 7rem;
+        padding: 0 0.5rem;
+        .view-icon {
+          fill: $blue-midtone-transparent;
+          transition: 0.2s ease-in-out;
+          &.selected {
+            fill: #fff;
+          }
         }
-      }
-      .view-button-text {
-        align-self: baseline;
-        margin: 0.75rem 0.63rem;
-        padding: 0;
-        border: none;
-        background: none;
-        color: $blue-midtone;
-        cursor: pointer;
+        .view-button-text {
+          align-self: baseline;
+          padding: 0;
+          border: none;
+          background: none;
+          color: $blue-midtone;
+          cursor: pointer;
+        }
       }
       &:hover {
         @include buttonHover;
