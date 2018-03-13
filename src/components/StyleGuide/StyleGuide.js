@@ -45,13 +45,15 @@ const StyleGuide = () => {
     const buttonClass = 'button ' + buttonClasses[index];
     return (
       <span key={generateUniqueKey()} className="button-wrapper">
-        <a className={buttonClass}>
-          {button === 'Text + Icon' && plusIcon}
-          {button === 'Loader' && loader}
-          {button !== 'Loader' && (
-            <span className="get-photos-text">Click Me</span>
-          )}
-        </a>
+        <button className={buttonClass}>
+          <a className="wrapper">
+            {button === 'Text + Icon' && plusIcon}
+            {button === 'Loader' && loader}
+            {button !== 'Loader' && (
+              <span className="get-photos-text">Click Me</span>
+            )}
+          </a>
+        </button>
 
         <h4 className="button-text">{button}</h4>
       </span>

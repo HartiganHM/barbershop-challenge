@@ -49,15 +49,23 @@
       width: 18rem;
       margin: 1.35rem;
       cursor: pointer;
-      .plus-icon {
-        width: 16px;
-        margin: 0.5rem;
-        fill: $white-transparent;
-        transition: 0.2s;
-      }
-      .loading-icon {
-        @include buttonLoader;
-        align-self: center;
+      .wrapper {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        .plus-icon {
+          width: 16px;
+          margin: 0.5rem;
+          fill: $white-transparent;
+          transition: 0.2s;
+        }
+        .loading-icon {
+          @include buttonLoader;
+          align-self: center;
+        }
+        .get-photos-text {
+          margin: 0.5rem;
+        }
       }
       &.text-icon:hover {
         .plus-icon {
